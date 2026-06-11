@@ -1,0 +1,6466 @@
+/**
+ * Banco completo DELE — lectura y auditiva
+ * Fuente: modelos oficiales Instituto Cervantes (Modelo 0)
+ * Generado con scripts/build_final_examenes.py
+ */
+const EXAMENES_DATA = {
+  adultos: {
+    a1: {
+      lectura: {
+        titulo: "DELE A1 — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Lea el correo de Inés (1–5).",
+            contexto: "Hola, Pedro:\n¿Qué tal estás? ¿Tienes muchos exámenes finales? Yo ahora estudio bastante para tener buenas notas y unas buenas vacaciones.\nEn julio quiero trabajar porque necesito dinero para viajar en agosto. Quiero ir al norte de España con Marta. Primero, vamos a visitar San Sebastián porque tiene una playa muy bonita. Después Bilbao porque las fiestas empiezan el día 15 y queremos verlas. Luego vamos a Santander porque no la conocemos. Además, los tíos de Marta viven allí y no tenemos que ir a un hotel, podemos dormir en su casa.\nDe Madrid a San Sebastián vamos en tren, de allí a Bilbao y a Santander en autobús. En Santander queremos alquilar una moto para visitar los pueblos en el camino de vuelta a Madrid.\nOtra cosa, el viernes es mi cumpleaños, pero voy a hacer la fiesta el sábado, ¿quieres venir? Necesito saberlo antes del jueves para llamar al restaurante. Ahora me voy, porque hoy ceno en casa de Marta y antes quiero comprar unas flores. Esta noche queremos ir a la discoteca.\nUn beso, Inés",
+            preguntas: [
+              {
+                enunciado: "En este correo, Inés le cuenta a Pedro…",
+                opciones: [
+                  "cuándo termina los exámenes.",
+                  "por qué quiere trabajar en verano.",
+                  "dónde va a ir de vacaciones en julio."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En el texto se dice que…",
+                opciones: [
+                  "las fiestas de San Sebastián son bonitas.",
+                  "la familia de Marta tiene un hotel en Santander.",
+                  "el 15 de agosto Inés va a estar en Bilbao."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Inés y Marta van a ir de Santander a Madrid…",
+                opciones: [
+                  "en coche.",
+                  "en moto.",
+                  "en autobús."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La fiesta de cumpleaños de Inés es…",
+                opciones: [
+                  "el jueves.",
+                  "el viernes.",
+                  "el sábado."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Dónde es la fiesta de cumpleaños de Inés?",
+                opciones: [
+                  "En casa de Marta.",
+                  "En un restaurante.",
+                  "En la discoteca."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Relacione frases 6–11 con mensajes A–J.",
+            contexto: "A) PROHIBIDO ENTRAR CON ANIMALES\nB) PROGRAMACIÓN TV — CINE ESPAÑOL\nC) SUPERMERCADO EL MONTE\nD) ATENCIÓN VIAJEROS — Billetes tren\nE) FESTIVAL DE CINE VALLADOLID\nF) BUZÓN MÓVIL\nG) AGENDA\nH) Teletexto — Frío y viento\nI) Escribir correo a mamá\nJ) INFORMACIÓN CULTURAL — Concierto Juanes",
+            preguntas: [
+              {
+                enunciado: "Es más barato en internet.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Quiere escribir a alguien de su familia.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "La película de Chile es el viernes.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Esta información está en una estación.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Esta semana es más barato.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El fin de semana hace mal tiempo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 9
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Relacione textos 12–17 con anuncios A–J.",
+            contexto: "A) Alicante — alquiler junto playa\nB) Barcelona — casa antigua\nC) Madrid — piso 4 dorm.\nD) Sevilla — apartamento pequeño\nE) Valencia — alquiler universidad\nF) Zaragoza — alquiler agosto\nG) Málaga — chalet piscina\nH) Gijón — casa rural\nI) Huesca — casa esquí\nJ) Alquiler vacacional playa mayo",
+            preguntas: [
+              {
+                enunciado: "Grupo amigos esquiar Navidad.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Piso pequeño para una persona.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Piso grande zona colegios.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Alquiler universidad máx. 650 €.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Piso mar 1–15 agosto.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Casa campo garaje y piscina.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 6
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Agenda cultural La Gaceta (18–25).",
+            contexto: "LA GACETA DE MADRID — Agenda (1–7 julio)\n• CINE «Después de hoy» — Alberto García. Fines de semana entrada más barata. 22 h.\n• TEATRO «Las mil y una noches»\n• ARTE «Berlanga en imágenes» — Fotografías. Caixa Forum. Lunes a domingo.\n• CONCIERTO Rock In Rio-Madrid — 18 h.\n• Parque de Aventura — Fines de semana cierra más tarde.",
+            preguntas: [
+              {
+                enunciado: "Los fines de semana la entrada de cine…",
+                opciones: [
+                  "es más barata.",
+                  "es más cara.",
+                  "cuesta igual."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "La exposición abre…",
+                opciones: [
+                  "de lunes a viernes.",
+                  "los fines de semana.",
+                  "de lunes a domingo."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Los conciertos empiezan a las…",
+                opciones: [
+                  "5 de la tarde.",
+                  "6 de la tarde.",
+                  "10 de la noche."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Los fines de semana, el centro de ocio cierra…",
+                opciones: [
+                  "más tarde.",
+                  "más pronto.",
+                  "a la misma hora."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El director Alberto García es de…",
+                opciones: [
+                  "España.",
+                  "Argentina.",
+                  "México."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En la exposición sobre Berlanga puedes ver…",
+                opciones: [
+                  "películas.",
+                  "fotografías.",
+                  "cuadros."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "A las diez de la noche empieza…",
+                opciones: [
+                  "la película.",
+                  "el concierto.",
+                  "la obra de teatro."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "No cuesta dinero ver…",
+                opciones: [
+                  "las películas.",
+                  "la exposición.",
+                  "el parque."
+                ],
+                correcta: 1
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE A1 — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Conversaciones 1–5.",
+            contexto: "Transcripción:\nConv.1: El hombre va al supermercado.\nConv.2: La chica va de compras con su hermana.\nConv.3: El hombre va al pueblo de sus padres.\nConv.4: Busca su móvil.\nConv.5: Come un bocadillo en la oficina.\nM1: Restaurante. M2: Estación/taxi. M3: Concierto guitarra. M4: Biblioteca cierra. M5: Hotel llaves.\nLucía: compañeros de español en Buenos Aires.\nPaco: describe su ciudad.",
+            preguntas: [
+              {
+                enunciado: "¿A qué lugar va el hombre hoy?",
+                opciones: [
+                  "Al supermercado.",
+                  "Al cine.",
+                  "Al trabajo."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué hace la chica esta tarde?",
+                opciones: [
+                  "Juega al fútbol.",
+                  "Va de compras.",
+                  "Estudia."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Dónde va el hombre de vacaciones?",
+                opciones: [
+                  "A la playa.",
+                  "A la montaña.",
+                  "Al pueblo de sus padres."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué busca el hombre?",
+                opciones: [
+                  "Las llaves.",
+                  "El móvil.",
+                  "El abrigo."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Qué come la mujer hoy?",
+                opciones: [
+                  "Sopa y carne.",
+                  "Un bocadillo en la oficina.",
+                  "Nada."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Mensajes 6–10 → A–I.",
+            contexto: "Transcripción:\nConv.1: El hombre va al supermercado.\nConv.2: La chica va de compras con su hermana.\nConv.3: El hombre va al pueblo de sus padres.\nConv.4: Busca su móvil.\nConv.5: Come un bocadillo en la oficina.\nM1: Restaurante. M2: Estación/taxi. M3: Concierto guitarra. M4: Biblioteca cierra. M5: Hotel llaves.\nLucía: compañeros de español en Buenos Aires.\nPaco: describe su ciudad.",
+            preguntas: [
+              {
+                enunciado: "Mensaje 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Mensaje 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Mensaje 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Mensaje 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Mensaje 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 3
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Compañeros 11–18 → A–L.",
+            contexto: "Transcripción:\nConv.1: El hombre va al supermercado.\nConv.2: La chica va de compras con su hermana.\nConv.3: El hombre va al pueblo de sus padres.\nConv.4: Busca su móvil.\nConv.5: Come un bocadillo en la oficina.\nM1: Restaurante. M2: Estación/taxi. M3: Concierto guitarra. M4: Biblioteca cierra. M5: Hotel llaves.\nLucía: compañeros de español en Buenos Aires.\nPaco: describe su ciudad.",
+            preguntas: [
+              {
+                enunciado: "Emiko",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Paola",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Sussane",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 9
+              },
+              {
+                enunciado: "Andreas",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 10
+              },
+              {
+                enunciado: "Scott",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Ozge",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 11
+              },
+              {
+                enunciado: "Amin",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Ana",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Frases 19–25 (A–I).",
+            contexto: "Transcripción:\nConv.1: El hombre va al supermercado.\nConv.2: La chica va de compras con su hermana.\nConv.3: El hombre va al pueblo de sus padres.\nConv.4: Busca su móvil.\nConv.5: Come un bocadillo en la oficina.\nM1: Restaurante. M2: Estación/taxi. M3: Concierto guitarra. M4: Biblioteca cierra. M5: Hotel llaves.\nLucía: compañeros de español en Buenos Aires.\nPaco: describe su ciudad.",
+            preguntas: [
+              {
+                enunciado: "La ciudad tiene muchos _______.",
+                opciones: [
+                  "grande",
+                  "el museo",
+                  "monumentos",
+                  "turistas",
+                  "coche",
+                  "autobús",
+                  "caro",
+                  "el palacio",
+                  "barato"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Muchas personas van para ver _______.",
+                opciones: [
+                  "grande",
+                  "el museo",
+                  "monumentos",
+                  "turistas",
+                  "coche",
+                  "autobús",
+                  "caro",
+                  "el palacio",
+                  "barato"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "A Paco le gusta _______ de su ciudad.",
+                opciones: [
+                  "grande",
+                  "el museo",
+                  "monumentos",
+                  "turistas",
+                  "coche",
+                  "autobús",
+                  "caro",
+                  "el palacio",
+                  "barato"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Lejos del centro está _______.",
+                opciones: [
+                  "grande",
+                  "el museo",
+                  "monumentos",
+                  "turistas",
+                  "coche",
+                  "autobús",
+                  "caro",
+                  "el palacio",
+                  "barato"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Comer en la ciudad es _______.",
+                opciones: [
+                  "grande",
+                  "el museo",
+                  "monumentos",
+                  "turistas",
+                  "coche",
+                  "autobús",
+                  "caro",
+                  "el palacio",
+                  "barato"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Se puede ir al centro en _______.",
+                opciones: [
+                  "grande",
+                  "el museo",
+                  "monumentos",
+                  "turistas",
+                  "coche",
+                  "autobús",
+                  "caro",
+                  "el palacio",
+                  "barato"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Normalmente va en _______.",
+                opciones: [
+                  "grande",
+                  "el museo",
+                  "monumentos",
+                  "turistas",
+                  "coche",
+                  "autobús",
+                  "caro",
+                  "el palacio",
+                  "barato"
+                ],
+                correcta: 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    a2: {
+      lectura: {
+        titulo: "DELE A2 — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Correo de Marta (1–5).",
+            contexto: "Hola, Carmen:\n¿Cómo estás? Hace semanas que no sé nada de ti… Marta escribe sobre Paula, Ahmed y sus vacaciones en Huelva.",
+            preguntas: [
+              {
+                enunciado: "Marta escribe a Carmen para…",
+                opciones: [
+                  "preguntarle por la zapatería.",
+                  "decirle que está de vacaciones.",
+                  "quedar para hablar un rato."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En el texto se dice que Marta…",
+                opciones: [
+                  "vive en una casa nueva.",
+                  "antes era vecina de Paula.",
+                  "está contenta en su barrio."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Según el texto, ahora Paula…",
+                opciones: [
+                  "gana más dinero que antes.",
+                  "trabaja en otra empresa.",
+                  "necesita un coche nuevo."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En el texto se dice que Ahmed…",
+                opciones: [
+                  "va a ir de vacaciones a Rabat.",
+                  "trabaja hasta septiembre.",
+                  "quiere decir adiós a sus amigos."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Marta quiere ir a Huelva porque…",
+                opciones: [
+                  "su hermana se va a casar allí.",
+                  "su tía la ha invitado a su casa.",
+                  "sus sobrinos van a ir unos días."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Anuncios (6–13).",
+            contexto: "Ocho anuncios: habitaciones, mercado, empleo, tiendas, pasaportes, horarios, centro inmigrantes, Parlora.",
+            preguntas: [
+              {
+                enunciado: "En el anuncio se dice que… (habitaciones)",
+                opciones: [
+                  "buscan a dos personas.",
+                  "prefieren un estudiante.",
+                  "alquilan piso para tres."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Según el texto, este mercado ahora tiene…",
+                opciones: [
+                  "tiendas nuevas.",
+                  "un horario diferente.",
+                  "mejores precios."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En el anuncio se dice que… (empleo)",
+                opciones: [
+                  "solo llaman con formación.",
+                  "el trabajo es en Guatemala.",
+                  "buscan vender ropa."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En el texto se dice que… (Galerías Amarillas)",
+                opciones: [
+                  "puede pagar menos varios días.",
+                  "devuelven el dinero.",
+                  "precios especiales cafetería."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Si necesita un nuevo pasaporte…",
+                opciones: [
+                  "llevar dos fotos.",
+                  "datos en internet.",
+                  "dar pasaporte anterior."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Los padres pueden hablar con profesores…",
+                opciones: [
+                  "mañana o tarde.",
+                  "si piden cita.",
+                  "por teléfono o correo."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En este centro… (inmigrantes)",
+                opciones: [
+                  "dan clases de lengua.",
+                  "tienen pisos.",
+                  "necesitan trabajadores."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En el texto se dice que… (Parlora)",
+                opciones: [
+                  "hay hospital nuevo.",
+                  "van a tener ambulancia.",
+                  "buscan personal."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Textos A, B, C (14–19).",
+            contexto: "A) Alicia — Holanda, cuidaba niños.\nB) Eva — Suecia, informática, solo inglés.\nC) Silvia — EE.UU., cocinera.",
+            preguntas: [
+              {
+                enunciado: "¿Quién no necesita hablar el idioma del país en su trabajo?",
+                opciones: [
+                  "Alicia (A)",
+                  "Eva (B)",
+                  "Silvia (C)"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Quién no tenía que pagar el alojamiento?",
+                opciones: [
+                  "Alicia (A)",
+                  "Eva (B)",
+                  "Silvia (C)"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Quién tenía un amigo que le habló de ese país?",
+                opciones: [
+                  "Alicia (A)",
+                  "Eva (B)",
+                  "Silvia (C)"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿A quién le presentaron a alguien que le dio trabajo?",
+                opciones: [
+                  "Alicia (A)",
+                  "Eva (B)",
+                  "Silvia (C)"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Quién fue a aprender el idioma?",
+                opciones: [
+                  "Alicia (A)",
+                  "Eva (B)",
+                  "Silvia (C)"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Quién conoció a su pareja allí?",
+                opciones: [
+                  "Alicia (A)",
+                  "Eva (B)",
+                  "Silvia (C)"
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Blog Historias de Madrid (20–25).",
+            contexto: "Manuel García — blog Historias de Madrid: viajes, lectura, libro, aplicación móvil, futuro del blog.",
+            preguntas: [
+              {
+                enunciado: "Según el texto, Manuel empezó el blog porque…",
+                opciones: [
+                  "trabajaba como historiador.",
+                  "antes trabajaba escribiendo en internet.",
+                  "no le gustaba su trabajo anterior."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En el texto se dice que el autor…",
+                opciones: [
+                  "paseaba mucho cuando llegó a Madrid.",
+                  "viajó a Madrid antes de vivir allí.",
+                  "leyó libros sobre Madrid antes de llegar."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según Manuel, en su blog…",
+                opciones: [
+                  "hace preguntas a la gente.",
+                  "pone lo que lee y ve sobre Madrid.",
+                  "escriben también otras personas."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Gracias al blog, Manuel…",
+                opciones: [
+                  "se ha hecho famoso.",
+                  "gana bastante dinero.",
+                  "conoce sitios especiales."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Manuel quiere…",
+                opciones: [
+                  "hacer cosas diferentes en su blog.",
+                  "escribir un libro sobre otra ciudad.",
+                  "trabajar en una librería."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En el texto se dice que Manuel…",
+                opciones: [
+                  "tiene otro blog con un amigo.",
+                  "está preparando un nuevo libro.",
+                  "antes escribía sobre fútbol."
+                ],
+                correcta: 2
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE A2 — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Conversaciones 1–6.",
+            contexto: "Transcripción:\nConv.1: Ya tiene microondas; compra lavadora.\nConv.2: Le duele el brazo derecho.\nConv.3: Compra calcetines marrones.\nConv.4: Ya estuvo en parque de atracciones.\nConv.5: Necesita servilleta.\nConv.6: Trabaja en peluquería.\nAudios 7–12: turismo, radio, cursos, presentadora, hipermercado, pisos.\nManuel y Olga.\nMensajes 19–25.",
+            preguntas: [
+              {
+                enunciado: "¿Qué tiene ya el hombre?",
+                opciones: [
+                  "Un microondas.",
+                  "Un lavaplatos.",
+                  "Una lavadora."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué le duele al hombre?",
+                opciones: [
+                  "El cuello.",
+                  "El brazo derecho.",
+                  "La espalda."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué compra la mujer?",
+                opciones: [
+                  "Botas negras.",
+                  "Calcetines marrones.",
+                  "Guantes."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Qué ha hecho ya la mujer en la ciudad?",
+                opciones: [
+                  "Ido a la playa.",
+                  "Visitado el parque de atracciones.",
+                  "Alquilado bicicletas."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Qué necesita la mujer?",
+                opciones: [
+                  "Sal.",
+                  "Un cuchillo.",
+                  "Una servilleta."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Dónde trabaja ahora el hombre?",
+                opciones: [
+                  "En una fábrica.",
+                  "En una oficina.",
+                  "En una peluquería."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Audios 7–12.",
+            contexto: "Transcripción:\nConv.1: Ya tiene microondas; compra lavadora.\nConv.2: Le duele el brazo derecho.\nConv.3: Compra calcetines marrones.\nConv.4: Ya estuvo en parque de atracciones.\nConv.5: Necesita servilleta.\nConv.6: Trabaja en peluquería.\nAudios 7–12: turismo, radio, cursos, presentadora, hipermercado, pisos.\nManuel y Olga.\nMensajes 19–25.",
+            preguntas: [
+              {
+                enunciado: "La Oficina de Turismo…",
+                opciones: [
+                  "abierta desde hace un año.",
+                  "tiene diez oficinas.",
+                  "busca trabajadores."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El programa La semana de Radio Clave…",
+                opciones: [
+                  "se escucha todos los días.",
+                  "se hace hoy por primera vez.",
+                  "cambió el horario."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Los cursos de español son…",
+                opciones: [
+                  "de 10 a 12.",
+                  "en la Casa de Cultura.",
+                  "para niños y jóvenes."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "La presentadora dice que hoy…",
+                opciones: [
+                  "el público puede preguntar.",
+                  "hablan de horarios del colegio.",
+                  "llamarán al invitado."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El hipermercado La Pradera…",
+                opciones: [
+                  "precios especiales esta semana.",
+                  "más barato por internet.",
+                  "lleva la compra gratis."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En Vida cotidiana hablan de…",
+                opciones: [
+                  "precios de pisos.",
+                  "mejores barrios.",
+                  "pisos para compartir."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Manuel / Olga / Ninguno (13–18).",
+            contexto: "Transcripción:\nConv.1: Ya tiene microondas; compra lavadora.\nConv.2: Le duele el brazo derecho.\nConv.3: Compra calcetines marrones.\nConv.4: Ya estuvo en parque de atracciones.\nConv.5: Necesita servilleta.\nConv.6: Trabaja en peluquería.\nAudios 7–12: turismo, radio, cursos, presentadora, hipermercado, pisos.\nManuel y Olga.\nMensajes 19–25.",
+            preguntas: [
+              {
+                enunciado: "Tiene un examen pronto.",
+                opciones: [
+                  "Manuel",
+                  "Olga",
+                  "Ninguno"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Va a ir a la frutería.",
+                opciones: [
+                  "Manuel",
+                  "Olga",
+                  "Ninguno"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Le encanta la paella.",
+                opciones: [
+                  "Manuel",
+                  "Olga",
+                  "Ninguno"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hace comida muy rica.",
+                opciones: [
+                  "Manuel",
+                  "Olga",
+                  "Ninguno"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Va a pagar la cuenta.",
+                opciones: [
+                  "Manuel",
+                  "Olga",
+                  "Ninguno"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Ha ido al banco.",
+                opciones: [
+                  "Manuel",
+                  "Olga",
+                  "Ninguno"
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Mensajes 19–25 → A–K.",
+            contexto: "Transcripción:\nConv.1: Ya tiene microondas; compra lavadora.\nConv.2: Le duele el brazo derecho.\nConv.3: Compra calcetines marrones.\nConv.4: Ya estuvo en parque de atracciones.\nConv.5: Necesita servilleta.\nConv.6: Trabaja en peluquería.\nAudios 7–12: turismo, radio, cursos, presentadora, hipermercado, pisos.\nManuel y Olga.\nMensajes 19–25.",
+            preguntas: [
+              {
+                enunciado: "Mensaje 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Mensaje 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Mensaje 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Mensaje 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Mensaje 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Mensaje 6",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Mensaje 7",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 9
+              }
+            ]
+          }
+        ]
+      }
+    },
+    b1: {
+      lectura: {
+        titulo: "DELE B1 — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Relacione a las personas (1-6) con los textos que informan sobre los programas (A-J). HAY TRES TEXTOS QUE NO DEBE RELACIONAR.",
+            contexto: "Programas de televisión recomendados.",
+            preguntas: [
+              {
+                enunciado: "Isabel: Soy una gran aficionada a los programas de divulgación científica. Me interesan sobre todo los programas que hablan del universo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Óscar: Desde que tuve a Carla, apenas tengo tiempo para ver la televisión. Lo único que puedo ver son los dibujos que echan mientras le doy la merienda.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Tina: Quiero transmitir a mis alumnos de secundaria la importancia de estar concienciado con los problemas medioambientales. Y una manera de hacerlo es viendo programas que traten de estos temas.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Adrián: Soy muy competitiva y por eso me apasionan los concursos. Los sigo incluso por Internet, porque en muchos de ellos puedes participar a través de las redes sociales.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 9
+              },
+              {
+                enunciado: "Eva María: Soy aficionado al buceo y me encantan los animales, así que no me pierdo los documentales que te ayudan a descubrir la espectacular fauna marina.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "David: Me gusta mantenerme informado de lo que está ocurriendo en cada momento, pero no me conformo solo con una opinión. Por eso los debates son mis programas favoritos.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Usted va a leer un texto sobre las joyas de concha en el México prehispánico. Seleccione la respuesta correcta (a / b / c).",
+            contexto: "EL MISTERIO DE LAS JOYAS DE CONCHA. La concha era un material precioso en el México prehispánico, asociado con el agua y el lujo.",
+            preguntas: [
+              {
+                enunciado: "Según el texto, las piezas hechas con concha del México prehispánico…",
+                opciones: [
+                  "aparecen a partir de la conquista española.",
+                  "se limitan a la zona de Tenochtitlan.",
+                  "se han hallado en los enterramientos."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En el texto se dice que los mexicas atribuían a la concha cierto carácter sagrado porque…",
+                opciones: [
+                  "la relacionaban con el agua.",
+                  "resultaba difícil de encontrar.",
+                  "era un símbolo de poder."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En el texto se nos informa de que el arqueólogo Adrián Velázquez…",
+                opciones: [
+                  "lleva 15 años investigando cómo se trabajaba la concha.",
+                  "halló un taller para la fabricación de la concha.",
+                  "descubrió los utensilios para trabajar la concha."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según el texto, en el taller experimental impulsado por Adrián Velázquez…",
+                opciones: [
+                  "se clasifican los tipos de concha encontrados.",
+                  "se trabaja la concha con nuevas técnicas.",
+                  "se reconstruyen los objetos hallados con conchas actuales."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Según el texto, en el Templo Mayor de Tenochtitlan la producción de los objetos de concha…",
+                opciones: [
+                  "se realizaba con varios procedimientos.",
+                  "se destinaba a las autoridades.",
+                  "se centraba en la elaboración de adornos."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En el texto se informa de que actualmente los estudios del taller de manufactura de la concha…",
+                opciones: [
+                  "se basan en la colección del Templo Mayor.",
+                  "incluyen todo el período prehispánico.",
+                  "analizan piezas posteriores a la conquista española."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Relacione las preguntas (13-18) con los textos (A, B o C).",
+            contexto: "Padres hablan de la organización de la fiesta de cumpleaños de sus hijos. A: Pablo, B: Ana, C: Nicolás.",
+            preguntas: [
+              {
+                enunciado: "¿Qué persona dice que celebraron la fiesta al aire libre?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué persona dice que en la fiesta hubo un espectáculo?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué persona dice que organizar el cumpleaños le supuso más trabajo del habitual?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Qué persona dice que disponía de poco dinero para los adornos?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué persona dice que su idea triunfó entre los niños?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué persona dice que hubo un concurso en la celebración?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Decida en qué lugar del texto (19-24) hay que colocar cada uno de los fragmentos (A-H). HAY DOS FRAGMENTOS QUE NO TIENE QUE ELEGIR.",
+            contexto: "LA HISTORIA DE LA @ (ARROBA). Orígenes medievales y evolución hasta el correo electrónico.",
+            preguntas: [
+              {
+                enunciado: "Hueco 19",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Hueco 20",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 21",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Hueco 22",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 23",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Hueco 24",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 5",
+            instruccion: "Lea el texto y rellene los huecos (25-30) con la opción correcta (a / b / c).",
+            contexto: "Correo de Mariana a Ana sobre un curso en Buenos Aires y planes de vacaciones.",
+            preguntas: [
+              {
+                enunciado: "Hueco 25",
+                opciones: [
+                  "estuve",
+                  "estaba",
+                  "había estado"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 26",
+                opciones: [
+                  "era",
+                  "estaba",
+                  "llevaba"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 27",
+                opciones: [
+                  "la",
+                  "lo",
+                  "le"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 28",
+                opciones: [
+                  "Cuál",
+                  "Qué",
+                  "Cuáles"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 29",
+                opciones: [
+                  "sepas",
+                  "sabes",
+                  "sabrías"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 30",
+                opciones: [
+                  "que",
+                  "de",
+                  "por"
+                ],
+                correcta: 1
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE B1 — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Seleccione la opción correcta (a / b / c) para cada mensaje del buzón de voz.",
+            contexto: "Transcripción: Mensajes variados sobre una agenda olvidada, un informe comercial, una entrevista de trabajo, un portátil roto, una tarta y ofertas de vuelos.",
+            preguntas: [
+              {
+                enunciado: "¿Para qué llama Roberto a Cristina?",
+                opciones: [
+                  "Para devolverle su agenda.",
+                  "Para proponerle salir a comer.",
+                  "Para recordarle que tienen una cita."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué tiene que hacer Pedro?",
+                opciones: [
+                  "Acudir a una reunión.",
+                  "Elaborar un informe.",
+                  "Enviar unos datos."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Para qué llama el hombre a la mujer?",
+                opciones: [
+                  "Para que le envíe el currículum.",
+                  "Para concertar una cita.",
+                  "Para aplazar una entrevista."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Qué le pide Julia a Mario?",
+                opciones: [
+                  "Que le arregle el ordenador.",
+                  "Que la ayude a hacer un trabajo de clase.",
+                  "Que le preste una película."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿A dónde tiene que ir Marta?",
+                opciones: [
+                  "Al banco.",
+                  "A su oficina.",
+                  "A la pastelería."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué quiere Paz que haga Carlos?",
+                opciones: [
+                  "Que vaya a la agencia de viajes.",
+                  "Que busque los billetes por Internet.",
+                  "Que hable con Elena del viaje."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Seleccione la respuesta correcta (a / b / c) sobre la vida de Juli en España.",
+            contexto: "Transcripción: Juli, una argentina en Asturias, habla de su vida en una caravana, su trabajo como monitora de esquí y su afición a tejer.",
+            preguntas: [
+              {
+                enunciado: "En la audición Juli cuenta que, al principio, cuando llegó a España,…",
+                opciones: [
+                  "viajó para conocer el país.",
+                  "se instaló en una casa con jardín.",
+                  "se fue a vivir a Asturias."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según la grabación, Juli decidió ir a España...",
+                opciones: [
+                  "porque tiene raíces españolas.",
+                  "para conocer a sus parientes.",
+                  "cuando terminó la carrera."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Con respecto a su trabajo, Juli explica en la audición que…",
+                opciones: [
+                  "es propietaria de un centro de esquí.",
+                  "se encarga de organizar los cursos.",
+                  "trabaja también en Argentina."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Juli dice que se dedica al esquí porque…",
+                opciones: [
+                  "le gusta desde la infancia.",
+                  "era un deporte popular en su región.",
+                  "su padre era un gran aficionado."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según la grabación, el hijo de Juli...",
+                opciones: [
+                  "empezó a esquiar hace seis meses.",
+                  "ama las montañas.",
+                  "muestra curiosidad por Argentina."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Juli cuenta en la audición que su afición a tejer le...",
+                opciones: [
+                  "sirve de ayuda económica.",
+                  "ofrece la posibilidad de conocer gente.",
+                  "hace sentirse cerca de su madre."
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Seleccione la respuesta correcta (a / b / c) para cada noticia radiofónica.",
+            contexto: "Transcripción: Noticias sobre la empresa Tecnova, Colombiamoda 2013, la actriz Juana Acosta, la escultora Eva López, el Atlético Nacional y el clima en Bogotá.",
+            preguntas: [
+              {
+                enunciado: "La empresa Tecnova...",
+                opciones: [
+                  "lleva tres años fabricando motos eléctricas.",
+                  "ha inaugurado dos fábricas en Colombia.",
+                  "exportará vehículos eléctricos."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "La feria Colombiamoda 2013...",
+                opciones: [
+                  "cuenta con 50 firmas extranjeras.",
+                  "tiene una duración de tres días",
+                  "ha ampliado un 20% su espacio."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La actriz colombiana Juana Acosta…",
+                opciones: [
+                  "ha recibido un premio en Colombia.",
+                  "ha participado en una serie española.",
+                  "ha estrenado una película en su país."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Las esculturas de Eva López pueden verse actualmente en…",
+                opciones: [
+                  "la Galería Casas de Bogotá.",
+                  "la Universidad Nacional de Colombia.",
+                  "el Museo de Arte Moderno de Medellín."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Ayer el equipo de fútbol Atlético Nacional...",
+                opciones: [
+                  "ganó un partido contra el Medellín.",
+                  "perdió por un gol de diferencia.",
+                  "empató al final del partido."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según el pronóstico del tiempo en Bogotá...",
+                opciones: [
+                  "hoy el cielo estará nublado.",
+                  "mañana hará sol.",
+                  "el lunes subirán las temperaturas."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Seleccione el enunciado (A-J) que corresponde al tema del que habla cada persona (19-24).",
+            contexto: "Transcripción: Personas recuerdan su etapa universitaria: voluntariado, cambio de carrera, deporte, becas, dificultades académicas y trabajo en un cine.",
+            preguntas: [
+              {
+                enunciado: "Persona 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Persona 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Persona 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Persona 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Persona 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Persona 6",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 7
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 5",
+            instruccion: "Indique si los enunciados (25-30) se refieren a Álvaro (A), a Beatriz (B) o a ninguno de los dos (C).",
+            contexto: "Transcripción: Conversación sobre la boda de Ana en México, el coste del viaje y el miedo a volar.",
+            preguntas: [
+              {
+                enunciado: "Propone salir a tomar algo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Conoce al novio de Ana.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Le preocupa gastarse mucho dinero.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Duda si asistirá a la boda de Ana.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Ha sacado el billete por Internet.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Le da igual que el vuelo haga escalas.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    b2: {
+      lectura: {
+        titulo: "DELE B2 — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Seleccione la respuesta correcta (a / b / c) sobre la basura electrónica.",
+            contexto: "BASURA ELECTRÓNICA. Informe de Greenpeace Argentina sobre el desecho de aparatos electrónicos y la necesidad de una ley de gestión.",
+            preguntas: [
+              {
+                enunciado: "Según el informe publicado por la organización Greenpeace, en Argentina…",
+                opciones: [
+                  "el 50% de la población guarda aparatos eléctricos viejos.",
+                  "un 40% de los desechos tecnológicos recibe tratamiento.",
+                  "cada persona genera 6 kg de residuos electrónicos al año."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Según el texto, la ley impulsada por Greenpeace Argentina…",
+                opciones: [
+                  "impone sanciones a los fabricantes de tecnología.",
+                  "implica la creación de empresas de reciclaje.",
+                  "aún no ha sido aprobada."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En el texto se dice que la organización Te Reciclo….",
+                opciones: [
+                  "arregla aparatos electrónicos en desuso.",
+                  "cobra por retirar los aparatos tecnológicos.",
+                  "estudia el tratamiento de la basura tecnológica."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El texto nos informa de que en el taller de reciclaje de la Fundación Equidad…",
+                opciones: [
+                  "se recolectan computadoras viejas de centros educativos.",
+                  "se reparan sin coste alguno equipos averiados.",
+                  "se ofrece formación a desempleados."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Según el texto, existen algunas compañías de telefonía celular que…",
+                opciones: [
+                  "se encargan del 90% del reciclaje del celular.",
+                  "recogen baterías desechadas.",
+                  "compran baterías en desuso."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La autora del texto dice que en Argentina la basura electrónica…",
+                opciones: [
+                  "es cada vez más abundante.",
+                  "se amontona en cualquier lugar.",
+                  "supone pérdidas económicas."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Relacione las preguntas (7-16) con los escritores (A, B, C y D).",
+            contexto: "Escritores recuerdan cómo publicaron su primer libro. A: Rafael, B: Alberto, C: Mariana, D: Ricardo.",
+            preguntas: [
+              {
+                enunciado: "¿Quién dice que antes de que escribiera su primera novela ya sabía que se la iban a publicar?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Quién dice que su primera novela la editó un compañero de trabajo?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "¿Quién dice que un periódico publicó una mala crítica de su primer libro?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Quién dice que para promocionar su novela se organizó un evento?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Quién dice que tardó mucho en escribir su segunda novela?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Quién dice que antes de publicar su primera novela ya había recibido un premio?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Quién dice que su segunda novela tuvo mejores críticas que la primera?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Quién dice que su primera novela tuvo escasa repercusión?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "¿Quién dice que para promocionar su primer libro fue a un programa de televisión?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Quién dice que su primer libro se vendió muy bien?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Decida en qué lugar del texto (17-22) hay que colocar cada uno de los fragmentos (A-H). HAY DOS FRAGMENTOS QUE NO TIENE QUE ELEGIR.",
+            contexto: "LOS VIDEOJUEGOS COMO ARTE. Argumentos a favor de considerar los videojuegos como una forma de arte similar al cine o la música.",
+            preguntas: [
+              {
+                enunciado: "Hueco 17",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 18",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Hueco 19",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 20",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Hueco 21",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Hueco 22",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Lea el texto y rellene los huecos (23-36) con la opción correcta (a / b / c).",
+            contexto: "CÓMO ME DESHICE DE QUINIENTOS LIBROS. Reflexión de Augusto Monterroso sobre la acumulación de libros y la vanidad intelectual.",
+            preguntas: [
+              {
+                enunciado: "Hueco 23",
+                opciones: [
+                  "cualquier",
+                  "ningún",
+                  "ninguno"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 24",
+                opciones: [
+                  "por",
+                  "para",
+                  "en"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 25",
+                opciones: [
+                  "hubiera podido",
+                  "habré podido",
+                  "pudiera"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 26",
+                opciones: [
+                  "a",
+                  "en",
+                  "de"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 27",
+                opciones: [
+                  "irritaría",
+                  "irrita",
+                  "irrite"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 28",
+                opciones: [
+                  "le",
+                  "se",
+                  "lo"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 29",
+                opciones: [
+                  "pero",
+                  "aún",
+                  "ya"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 30",
+                opciones: [
+                  "contaminar",
+                  "contaminando",
+                  "contaminado"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 31",
+                opciones: [
+                  "para",
+                  "con",
+                  "por"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 32",
+                opciones: [
+                  "es",
+                  "se pone",
+                  "está"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 33",
+                opciones: [
+                  "diría",
+                  "dijera",
+                  "decía"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 34",
+                opciones: [
+                  "Se",
+                  "Le",
+                  "Lo"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 35",
+                opciones: [
+                  "de ahí que",
+                  "salvo si",
+                  "a menos que"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 36",
+                opciones: [
+                  "ha vuelto",
+                  "ha convertido",
+                  "ha hecho"
+                ],
+                correcta: 1
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE B2 — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Seleccione la opción correcta (a / b / c) para cada conversación breve.",
+            contexto: "Transcripción: Conversaciones sobre un esguince de tobillo, malas notas, vida en una residencia, preparativos de boda, noticias del paro y el clima, y un partido de fútbol.",
+            preguntas: [
+              {
+                enunciado: "Marta le dice a su amigo que…",
+                opciones: [
+                  "se ha tomado unos días libres.",
+                  "ha tenido un accidente laboral.",
+                  "ha estado de baja por maternidad."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La mujer le reprocha a su hijo que…",
+                opciones: [
+                  "no haya estudiado lo suficiente.",
+                  "no puedan ir de vacaciones.",
+                  "pase muchas horas jugando."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué critica Gonzalo de la vida en la residencia?",
+                opciones: [
+                  "El precio.",
+                  "Las instalaciones.",
+                  "La falta de privacidad."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "La mujer le dice al hombre que…",
+                opciones: [
+                  "va a pedir unos días de vacaciones.",
+                  "Belén se comprometió a ayudarla.",
+                  "es preferible que no venga su madre."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "El hombre le dice a la mujer que…",
+                opciones: [
+                  "la tasa de desempleo ha descendido.",
+                  "el sábado hará buen tiempo.",
+                  "iba a llamar a Leo para ir al campo."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Para qué habla la mujer con el hombre?",
+                opciones: [
+                  "Para darle un consejo.",
+                  "Para reñirlo.",
+                  "Para consolarlo."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Indique si los enunciados (7-12) se refieren a Antonio (A), a Bárbara (B) o a ninguno de los dos (C).",
+            contexto: "Transcripción: Conversación entre Antonio y Bárbara sobre un accidente de coche, problemas mecánicos, una lesión de rodilla y un despido laboral.",
+            preguntas: [
+              {
+                enunciado: "Tiene el coche desde hace poco tiempo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Viene de recoger el coche en el taller.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Se arrepiente de haber comprado el coche.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Ha estado de baja.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Lleva una temporada sin trabajar.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Le habría gustado tener su propia empresa.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Seleccione la respuesta correcta (a / b / c) de la entrevista a una chef mexicana.",
+            contexto: "Transcripción: Una chef mexicana habla de su formación en el País Vasco con Arzak y su liderazgo en la asociación Slow Food de Querétaro.",
+            preguntas: [
+              {
+                enunciado: "En la entrevista la chef mexicana dice que empezó a interesarse por la cocina…",
+                opciones: [
+                  "gracias a su madre.",
+                  "cuando era una niña.",
+                  "en el año 89."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Con respecto a su estancia en el País Vasco, la chef cuenta que entonces…",
+                opciones: [
+                  "no tenía claro que quería llegar a ser chef.",
+                  "en la Escuela de Hostelería daba clases el cocinero Arzak.",
+                  "no era consciente de lo que suponía trabajar con Arzak."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "La chef mexicana dice que en el País Vasco aprendió a disfrutar de…",
+                opciones: [
+                  "otro ritmo de vida.",
+                  "los productos del mar.",
+                  "la filosofía del Slow Food ."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En la entrevista la chef dice que la asociación Slow Food  de Querétaro……",
+                opciones: [
+                  "es la sexta que se establece en México.",
+                  "ha suscrito un convenio con el gobierno.",
+                  "impulsa la comercialización de productos locales."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La entrevistada cuenta que los talleres de la asociación Slow Food  de Querétaro…",
+                opciones: [
+                  "se dedican a la elaboración de productos.",
+                  "fomentan el consumo de productos locales.",
+                  "los imparten productores locales."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La entrevistada dice que en algunos talleres los niños que participan…",
+                opciones: [
+                  "aprenden a cocinar.",
+                  "comen con las manos.",
+                  "experimentan con la comida."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Seleccione el enunciado (A-J) que corresponde al tema del que habla cada persona (19-24).",
+            contexto: "Transcripción: Consejos para montar una empresa: austeridad en gastos, trabajar por cuenta propia, informarse de subvenciones, trámites municipales, asociarse y presencia en Internet.",
+            preguntas: [
+              {
+                enunciado: "Persona 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Persona 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Persona 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Persona 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Persona 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Persona 6",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 7
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 5",
+            instruccion: "Seleccione la opción correcta (a / b / c) sobre la empresa Vertisub.",
+            contexto: "Transcripción: Pilar Almagro habla de su empresa Vertisub, especializada en trabajos de riesgo en altura y profundidad, y su crecimiento internacional.",
+            preguntas: [
+              {
+                enunciado: "En la audición, la empresaria Pilar Almagro cuenta que...",
+                opciones: [
+                  "empezó a escalar hace 18 años.",
+                  "conoció a su marido trabajando.",
+                  "montó su empresa con su pareja."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Pilar Almagro dice que la empresa Vertisub...",
+                opciones: [
+                  "realiza trabajos en lugares de difícil acceso.",
+                  "produce y vende material de rescate.",
+                  "se dedica a la prevención de riesgos laborales."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Pilar Almagro dice que Vertisub en sus comienzos operaba...",
+                opciones: [
+                  "en un entorno urbano.",
+                  "fuera de España.",
+                  "en las obras de la Sagrada Familia."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según la audición, la empresa Vertisub también se dedica a...",
+                opciones: [
+                  "fabricar material de escalada y espeleología.",
+                  "desarrollar sistemas de seguridad.",
+                  "vender material especializado."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La empresaria Pilar Almagro dice que los empleados de Vertisub...",
+                opciones: [
+                  "no llegan a 200.",
+                  "han hecho cursos de escalada.",
+                  "son personas prudentes."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Pilar Almagro dice que el éxito de su empresa se debe a...",
+                opciones: [
+                  "la formación de su plantilla.",
+                  "saber cómo crecer.",
+                  "una estrategia de diversificación comercial."
+                ],
+                correcta: 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    c1: {
+      lectura: {
+        titulo: "DELE C1 — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Seleccione la opción correcta (a / b / c) sobre las bases del concurso de cante flamenco.",
+            contexto: "Concurso de cante Murcia flamenca. Bases para participar, premios y fases del concurso.",
+            preguntas: [
+              {
+                enunciado: "Según el texto, el objetivo principal del concurso es…",
+                opciones: [
+                  "difundir las tendencias innovadoras del flamenco.",
+                  "valorar la trayectoria de artistas profesionales.",
+                  "promover el flamenco a través de nuevos talentos."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El texto explica que la solicitud de participación debe…",
+                opciones: [
+                  "incluir un currículum detallado del aspirante.",
+                  "tramitarse tras una preinscripción vía telefónica.",
+                  "acompañarse de una muestra de alguna actuación."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Sobre las ausencias se señala que…",
+                opciones: [
+                  "se aceptarán siempre que haya aviso previo o se justifiquen debidamente.",
+                  "se fijará una nueva sesión atendiendo a la disponibilidad de los aspirantes.",
+                  "se dispondrá de un plazo para poder participar en alguna edición posterior."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según el texto, las dietas variarán en función…",
+                opciones: [
+                  "de la modalidad en la que se concursa.",
+                  "del lugar donde se realice la prueba.",
+                  "del municipio en el que se habite."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En el texto se dice que el jurado tendrá en cuenta…",
+                opciones: [
+                  "la capacidad para transmitir el contenido de las canciones.",
+                  "la complejidad musical por encima de cuestiones escénicas.",
+                  "la selección de estilos en relación con las cualidades vocales."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En relación con los premios se indica que…",
+                opciones: [
+                  "proceden de distintas instituciones.",
+                  "incluyen un recuerdo simbólico.",
+                  "se entregarán todos en efectivo."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Decida en qué lugar del texto (7-12) hay que colocar cada uno de los fragmentos (A-G). HAY UN FRAGMENTO QUE NO TIENE QUE ELEGIR.",
+            contexto: "Los retos de la lectura en la era de Internet. Transformación de la lectura lineal a la ciberlectura interactiva.",
+            preguntas: [
+              {
+                enunciado: "Hueco 7",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Hueco 8",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Hueco 9",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 10",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 11",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Hueco 12",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 5
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Seleccione la opción correcta (a / b / c) sobre el misterio del tiempo.",
+            contexto: "El misterio del tiempo. Percepción del tiempo, ritmo tecnológico y concepciones filosóficas.",
+            preguntas: [
+              {
+                enunciado: "Según el texto, hay acuerdo en que la noción del tiempo…",
+                opciones: [
+                  "es una sensación que varía según las circunstancias.",
+                  "prioriza el componente racional sobre el sensorial.",
+                  "resulta realmente inexplicable sin el uso del reloj."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En opinión de los expertos, el acelerado ritmo tecnológico…",
+                opciones: [
+                  "hace tomar mayor consciencia del paso del tiempo.",
+                  "está produciendo muchas alteraciones biológicas.",
+                  "somete al ser humano a una presión excesiva."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "La autora del texto habla del paso de los años como…",
+                opciones: [
+                  "un obstáculo para reincorporarse al mercado laboral.",
+                  "un proceso caracterizado por el irremediable deterioro.",
+                  "una circunstancia vital inevitable que se debería asumir."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según el texto, la percepción del tiempo está relacionada con…",
+                opciones: [
+                  "la capacidad cognitiva de cada individuo.",
+                  "la función desempeñada por un órgano.",
+                  "la necesidad de hacer balance de lo vivido."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En cuanto a la concepción filosófica del tiempo, el texto señala que…",
+                opciones: [
+                  "el pensamiento de la Antigüedad ha quedado superado.",
+                  "predomina la teoría de dos extremos claramente marcados.",
+                  "se debate entre corrientes que poseen elementos comunes."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Según el texto, en relación con el tiempo, lo fundamental es…",
+                opciones: [
+                  "disfrutarlo sin reflexionar mucho sobre él.",
+                  "liberarse cuanto antes de los asuntos urgentes.",
+                  "considerar el propósito de la existencia."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Elija el texto (A-F) que corresponde a cada enunciado (19-26).",
+            contexto: "Libros para fanáticos del ciclismo. Reseñas de seis libros sobre la historia y sensaciones del ciclismo.",
+            preguntas: [
+              {
+                enunciado: "Entre otras cosas, pretende mostrar las causas que determinan la excelencia de los ciclistas colombianos.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Alternan elementos autobiográficos con secuencias donde se exponen las sensaciones que conlleva este deporte.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Destaca, junto al enorme esfuerzo y los grandes triunfos, la parte más negativa del ciclismo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "La intención del libro es ahondar en la trayectoria más íntima de un extraordinario ciclista.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Se trata de una obra muy difundida entre los grandes apasionados de este deporte.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hace un exhaustivo recorrido por el mundo del ciclismo colombiano desde sus orígenes.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El libro recuerda a algunos hombres que, aun sin garantías de alcanzar el éxito, fueron capaces de todo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Narra las conquistas de deportistas que han resultado cruciales para el desarrollo del ciclismo colombiano.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 5",
+            instruccion: "Rellene los huecos (27-40) con la opción correcta (a / b / c).",
+            contexto: "El secreto del buen pan. La importancia de la paciencia y la técnica en la elaboración del pan de masa madre.",
+            preguntas: [
+              {
+                enunciado: "Hueco 27",
+                opciones: [
+                  "a su vez",
+                  "rara vez",
+                  "de una vez"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 28",
+                opciones: [
+                  "tanto como",
+                  "como que",
+                  "que"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 29",
+                opciones: [
+                  "pretender",
+                  "evitar",
+                  "prevenir"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 30",
+                opciones: [
+                  "Contra",
+                  "Cuanto",
+                  "Como"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 31",
+                opciones: [
+                  "hubiera",
+                  "haya",
+                  "habría"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 32",
+                opciones: [
+                  "se estropea",
+                  "se desgasta",
+                  "se avería"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 33",
+                opciones: [
+                  "repercute",
+                  "predomina",
+                  "da prioridad"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 34",
+                opciones: [
+                  "salvo",
+                  "incluso",
+                  "sino"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 35",
+                opciones: [
+                  "si no",
+                  "apenas",
+                  "no tanto"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 36",
+                opciones: [
+                  "asentarse",
+                  "asegurarse",
+                  "acomodarse"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 37",
+                opciones: [
+                  "supone",
+                  "admite",
+                  "atribuye"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 38",
+                opciones: [
+                  "Aun sabiendo",
+                  "Del mismo modo",
+                  "Bien es verdad"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 39",
+                opciones: [
+                  "los cuales",
+                  "a quienes",
+                  "aquellos que"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 40",
+                opciones: [
+                  "digiera",
+                  "digiere",
+                  "digiriera"
+                ],
+                correcta: 0
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE C1 — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Elija las seis opciones (A-L) que corresponden a la entrevista sobre la alimentación de los antiguos canarios.",
+            contexto: "Transcripción: El escritor Juan Carlos Saavedra habla de la dieta de los primeros habitantes de Canarias, contrastando crónicas históricas con hallazgos arqueológicos.",
+            preguntas: [
+              {
+                enunciado: "Opción 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Opción 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Opción 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Opción 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Opción 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 10
+              },
+              {
+                enunciado: "Opción 6",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 11
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Seleccione la opción correcta (a / b / c) para cada conversación.",
+            contexto: "Transcripción: Conversaciones sobre ruidos en pisos turísticos, una avería en un calentador, un accidente de bicicleta y condiciones laborales en un almacén.",
+            preguntas: [
+              {
+                enunciado: "Por la conversación se sabe que Ángela…",
+                opciones: [
+                  "se opone a los alquileres turísticos en su edificio.",
+                  "acusa a Pedro de ser permisivo con los inquilinos.",
+                  "quiere establecer unas normas para la comunidad."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En cuanto a la problemática expuesta, se afirma que…",
+                opciones: [
+                  "el presidente de la comunidad la ignoraba.",
+                  "las normas que la regulan están cambiando.",
+                  "el Ayuntamiento se ha desentendido de ella."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "De la conversación se deduce que el hombre…",
+                opciones: [
+                  "trató de resolver el problema por sus propios medios.",
+                  "atribuye la avería a la antigüedad del calentador.",
+                  "estaba advertido del procedimiento de las revisiones."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Ante las explicaciones del hombre, la mujer…",
+                opciones: [
+                  "expresa asombro por la avería.",
+                  "le reprocha la falta de previsión.",
+                  "muestra total disponibilidad."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El hombre le explica a la mujer que…",
+                opciones: [
+                  "advirtió a Javier de la peligrosidad de sus acciones.",
+                  "era consciente del estado de gravedad de su amigo.",
+                  "tiene la intención de visitar a Javier en el hospital."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En relación con la sorpresa para Javier,...",
+                opciones: [
+                  "el hombre ofrece un sitio para la fiesta.",
+                  "la mujer propone hacerle un regalo.",
+                  "ambos quieren invitar a un grupo numeroso."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Estos trabajadores quieren que su empresa modifique…",
+                opciones: [
+                  "el número de empleados ocasionales.",
+                  "los cursos de formación de los nuevos.",
+                  "la política de contratos temporales."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Frente a las circunstancias actuales, la mujer muestra…",
+                opciones: [
+                  "discreción.",
+                  "irritación.",
+                  "confusión."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Seleccione la opción correcta (a / b / c) de la entrevista al director de Neus Mobile.",
+            contexto: "Transcripción: Alfredo habla de su experiencia en China y su empresa de telecomunicaciones Neus Mobile, enfocada en logística y 5G.",
+            preguntas: [
+              {
+                enunciado: "En la entrevista se dice que la empresa Neus Mobile…",
+                opciones: [
+                  "lleva innovando en Asia más de dos décadas.",
+                  "controla el mercado de la logística en México.",
+                  "desarrolla a la vez diversas líneas de negocio."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El empresario afirma que, en las telecomunicaciones, se está produciendo…",
+                opciones: [
+                  "un cambio de prioridades en la transmisión de datos.",
+                  "una transformación radical en la sociedad mexicana.",
+                  "un incremento de la capacidad tecnológica de México."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según el entrevistado, lo que pretende su compañía es…",
+                opciones: [
+                  "potenciar su departamento de logística.",
+                  "centrarse en la transmisión de datos.",
+                  "desarrollar la autonomía de sus clientes."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Para el entrevistado, la diferencia de su empresa con otras compañías es que…",
+                opciones: [
+                  "logra una aplicación rápida de las nuevas ideas.",
+                  "lleva a cabo una prestación de carácter global.",
+                  "está abierta a cualquier propuesta innovadora."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En la entrevista, este empresario mexicano recomienda…",
+                opciones: [
+                  "orientar las operaciones comerciales a los artículos básicos.",
+                  "rentabilizar el interés asiático por la innovación extranjera.",
+                  "residir en el país elegido antes de montar un negocio."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "El entrevistado dice que, en la actualidad, su empresa…",
+                opciones: [
+                  "consigue más clientes en Asia que en México.",
+                  "está asociada a compañías de diferentes países.",
+                  "ha modificado el sistema de gestión de patentes."
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Seleccione la opción correcta (a / b / c) para cada uno de los diez breves diálogos.",
+            contexto: "Transcripción: Diálogos cortos sobre citas, cambios de actitud, becas denegadas, comisiones bancarias, fiestas sorpresa, alergias, desplantes de amigos, discursos obligados, plazos de entrega y reformas de edificios.",
+            preguntas: [
+              {
+                enunciado: "De la conversación se deduce que la mujer…",
+                opciones: [
+                  "cambia la hora de su cita.",
+                  "cancela una cita previa.",
+                  "consigue la cita deseada."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Estas dos personas coinciden en que Antonio…",
+                opciones: [
+                  "se muestra abatido por su situación personal.",
+                  "ha cambiado de actitud desde su separación.",
+                  "ha sufrido cambios físicos muy significativos."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Respecto a la solicitud de la beca, el hombre piensa que…",
+                opciones: [
+                  "cumple con los requisitos establecidos.",
+                  "pueden haber modificado la normativa.",
+                  "se ha perdido parte de su documentación."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "La mujer le advierte al hombre que…",
+                opciones: [
+                  "es necesario modificar los datos bancarios.",
+                  "hay que abonar un importe al emitir la tarjeta.",
+                  "debe asumir el coste de una nueva tarifa."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Ante la sugerencia del hombre, Julia muestra…",
+                opciones: [
+                  "alivio.",
+                  "asombro.",
+                  "aprobación."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "El hombre se queja de que…",
+                opciones: [
+                  "apenas consigue dormir.",
+                  "le cambiaron el tratamiento.",
+                  "sufre trastornos respiratorios."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El hombre dice que…",
+                opciones: [
+                  "la conducta de Andrés es decepcionante.",
+                  "Andrés ignoraba la importancia del acto.",
+                  "su relación de amistad con Andrés se ha roto."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El hombre ha recibido la noticia…",
+                opciones: [
+                  "lleno de orgullo.",
+                  "con resignación.",
+                  "con desconfianza."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Por la conversación se sabe que…",
+                opciones: [
+                  "la mujer ya ha pasado por lo mismo antes.",
+                  "el hombre se está sintiendo muy agobiado.",
+                  "es imposible extender el plazo de entrega."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El hombre responde a la mujer…",
+                opciones: [
+                  "indicando el motivo de una reforma.",
+                  "señalando la localización del despacho.",
+                  "remitiéndola a un lugar específico."
+                ],
+                correcta: 2
+              }
+            ]
+          }
+        ]
+      }
+    },
+    c2: {
+      lectura: {
+        titulo: "DELE C2 — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Rellene los huecos (1-12) con la opción correcta (a / b / c).",
+            contexto: "Amores flemáticos. Relato sobre el enamoramiento repentino y la historia de Clarín 'El dúo de la tos'.",
+            preguntas: [
+              {
+                enunciado: "Hueco 1",
+                opciones: [
+                  "merodeada",
+                  "vislumbrada",
+                  "infundida"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 2",
+                opciones: [
+                  "aferra",
+                  "apresa",
+                  "atrapa"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 3",
+                opciones: [
+                  "infiere",
+                  "acomete",
+                  "atisba"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 4",
+                opciones: [
+                  "alféizares",
+                  "tabiques",
+                  "dinteles"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 5",
+                opciones: [
+                  "se derraman",
+                  "se precipitan",
+                  "se demuelen"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 6",
+                opciones: [
+                  "consecuentes",
+                  "reprimidos",
+                  "discretos"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 7",
+                opciones: [
+                  "concierto",
+                  "consenso",
+                  "unísono"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 8",
+                opciones: [
+                  "brota",
+                  "promueve",
+                  "impera"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 9",
+                opciones: [
+                  "pleitos",
+                  "compases",
+                  "desacatos"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 10",
+                opciones: [
+                  "escolta",
+                  "cortejo",
+                  "comitiva"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 11",
+                opciones: [
+                  "afiliada",
+                  "adicta",
+                  "aliada"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 12",
+                opciones: [
+                  "advierten",
+                  "ostentan",
+                  "requieren"
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Decida en qué lugar del texto (13-18) hay que colocar cada uno de los fragmentos (A-G). HAY UN FRAGMENTO QUE NO TIENE QUE ELEGIR.",
+            contexto: "En los dominios del hielo. Crónica de una expedición a los hielos continentales de la Patagonia.",
+            preguntas: [
+              {
+                enunciado: "Hueco 13",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 14",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Hueco 15",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 16",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Hueco 17",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 18",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 6
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Elija el texto (A-F) que corresponde a cada enunciado (19-26).",
+            contexto: "Los mejores ritmos cubanos. Historia y características del Danzón, Mambo, Chachachá, Rumba, Son cubano y Conga.",
+            preguntas: [
+              {
+                enunciado: "Avala a este ritmo el hecho de haber contribuido a la música con un significativo número de loables profesionales.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Su compás melódico y repetitivo lo convierte en uno de los bailes más demandados.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Constituye una variante de otro ritmo cubano en la que se optó por la supresión de la voz.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "El compás de este bullicioso baile está marcado por el sonido de instrumentos de carácter rudimentario.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Por sus insinuantes pasos fue un ritmo que estuvo vetado en las más relevantes salas de baile.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Una vez que se extendió, se optó por una simplificación de los pasos de baile a fin de que pudiera llegar a más gente.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Su popularización se vincula al hecho de nutrirse de otros ritmos y a que comenzaron a aflorar importantes grupos de instrumentistas.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El canto dotó a este baile de una mayor libertad en su ejecución.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                correcta: 2
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE C2 — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 4",
+            instruccion: "Elija las cinco opciones (A-L) que corresponden a la conferencia sobre el origen de la ficción.",
+            contexto: "Transcripción: Jorge Volpi argumenta que los humanos son seres ficcionales y explora el origen de la ficción en la mentira prehistórica y el juego infantil.",
+            preguntas: [
+              {
+                enunciado: "Opción 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Opción 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Opción 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Opción 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Opción 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 10
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 5",
+            instruccion: "Indique qué ideas expresa el hombre (H), cuáles la mujer (M) y cuáles ninguno de los dos (N).",
+            contexto: "Transcripción: Anne Igartiburu y Pedro Marcos conversan sobre el coaching, la importancia de las preguntas abiertas y el poder de la conversación.",
+            preguntas: [
+              {
+                enunciado: "Recurrió al coaching para gestionar mejor la combinación de su vida pública y personal.",
+                opciones: [
+                  "H",
+                  "M",
+                  "N"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La efectividad del coaching radica en convertirlo en una práctica diaria.",
+                opciones: [
+                  "H",
+                  "M",
+                  "N"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El coaching se basa en explotar el poder de la conversación.",
+                opciones: [
+                  "H",
+                  "M",
+                  "N"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Un buen coach permite que cada persona diseñe su propia ruta de desarrollo.",
+                opciones: [
+                  "H",
+                  "M",
+                  "N"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Los procesos de coaching pueden generarse en el seno de nuestras relaciones personales.",
+                opciones: [
+                  "H",
+                  "M",
+                  "N"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Con la técnica de las preguntas abiertas, el coach nos orienta y proporciona la mejor respuesta a nuestros dilemas.",
+                opciones: [
+                  "H",
+                  "M",
+                  "N"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Al plantear a una persona preguntas cerradas, llevamos la conversación a nuestro espacio de pensamiento.",
+                opciones: [
+                  "H",
+                  "M",
+                  "N"
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 6",
+            instruccion: "Seleccione la opción correcta (a / b / c) de la entrevista al astrofísico Jorge Zuloaga.",
+            contexto: "Transcripción: Jorge Zuloaga habla sobre la astronomía en Latinoamérica, la búsqueda de vida extraterrestre y el estudio del clima en otros planetas.",
+            preguntas: [
+              {
+                enunciado: "Jorge Zuloaga considera que la astronomía es…",
+                opciones: [
+                  "un elemento realmente ineludible para el ser humano.",
+                  "una ciencia que es aplicable a un sinfín de materias.",
+                  "una ciencia que es aplicable a un sinfín de materias."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Para Jorge Zuloaga, la divulgación de la astronomía en la República Dominicana…",
+                opciones: [
+                  "está aún a años luz de desvelar lo que deparará el futuro.",
+                  "es un cometido primordial, que se está llevando a cabo.",
+                  "deberían abordarla las instituciones especializadas."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En relación con los nuevos proyectos, el deseo del entrevistado es que…",
+                opciones: [
+                  "arranquen con una mínima estabilidad económica.",
+                  "surjan del compromiso de gente altruista y aventurera.",
+                  "se incentiven desde los departamentos universitarios."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Zuloaga cree que la existencia de vida extraterrestre…",
+                opciones: [
+                  "constituye una hipótesis francamente verosímil.",
+                  "podrá aseverarse en un breve periodo de tiempo.",
+                  "provoca serias discrepancias entre los astrónomos."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según el entrevistado, el análisis del clima de otros planetas es útil para…",
+                opciones: [
+                  "penetrar en fenómenos que son inconcebibles en la Tierra.",
+                  "captar toda la disparidad existente dentro del universo.",
+                  "tomar nota de evoluciones que pueden servirnos de referente."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Jorge Zuloaga señala que el Sol…",
+                opciones: [
+                  "es un factor determinante en el actual cambio climático terrestre.",
+                  "va menguando su solidez de manera progresiva en el tiempo.",
+                  "provocó alteraciones climáticas en el devenir de nuestro planeta."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 7",
+            instruccion: "Seleccione el enunciado (A-L) que corresponde a cada persona (45-52).",
+            contexto: "Transcripción: Ocho personas expresan diferentes sentimientos: alivio, hartazgo, escepticismo, incredulidad, indignación, empatía, resignación, aflicción, vergüenza, etc.",
+            preguntas: [
+              {
+                enunciado: "Persona 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Persona 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Persona 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Persona 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Persona 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Persona 6",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 9
+              },
+              {
+                enunciado: "Persona 7",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Persona 8",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 10
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  escolares: {
+    a1: {
+      lectura: {
+        titulo: "DELE A1 Escolar — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Seleccione la opción correcta (A, B o C) sobre el correo de Macarena.",
+            contexto: "Correo de Macarena sobre sus planes de verano en Cádiz, San Sebastián y Bilbao.",
+            preguntas: [
+              {
+                enunciado: "Macarena escribe un correo electrónico sobre ...",
+                opciones: [
+                  "sus vacaciones.",
+                  "su viaje al extranjero.",
+                  "su curso de español."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Cerca del hotel hay…",
+                opciones: [
+                  "una piscina.",
+                  "un restaurante.",
+                  "una playa."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Su hermana va de camping…",
+                opciones: [
+                  "en julio.",
+                  "la próxima semana.",
+                  "mañana."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Va a viajar a Bilbao…",
+                opciones: [
+                  "con su hermana.",
+                  "con sus padres",
+                  "con su madre."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Sus padres le van a comprar …",
+                opciones: [
+                  "un ordenador.",
+                  "una maleta.",
+                  "una cámara."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Relacione los mensajes (A-J) con las frases (6 -11).",
+            contexto: "Mensajes en un colegio sobre comedor, biblioteca, becas, clases de refuerzo, etc.",
+            preguntas: [
+              {
+                enunciado: "Una zona de este lugar está cerrada.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Para hacer esta actividad hay que pagar",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Este servicio es solo para niños pequeños.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 9
+              },
+              {
+                enunciado: "Solo está abierto por la mañana.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Puede elegir qué comida quiere tomar.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Es la primera vez que se reúnen.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Relacione los anuncios de mascotas (A-J) con las personas (12-17).",
+            contexto: "Anuncios de una asociación de animales y personas buscando mascota.",
+            preguntas: [
+              {
+                enunciado: "Queremos tener dos mascotas. Nos gustan todos los animales.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Necesito un perro guardián para proteger la casa. Vivo sola y a veces tengo miedo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "No me gusta salir de casa, quiero un animal para estar conmigo en el sofá.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Mi padre quiere para su cumpleaños un animal para ir con él al parque a hacer deporte.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "A mi amiga Carla no le gustan los perros ni los gatos. Su madre, además, no quiere animales en casa.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Y a mí no me gustan los animales pequeños. La verdad, prefiero uno para poder salir al campo y hacer deporte.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 9
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Seleccione la opción correcta (A, B o C) sobre el calendario de actividades extraescolares.",
+            contexto: "Calendario de actividades del Instituto Francisco González.",
+            preguntas: [
+              {
+                enunciado: "El 8 de octubre los alumnos de 3º de Secundaria _____________",
+                opciones: [
+                  "van a ir de excursión.",
+                  "van a ver un departamento.",
+                  "van a ir a una fiesta."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "La actividad para aprender a leer prensa es para _____________",
+                opciones: [
+                  "todos los alumnos del Instituto.",
+                  "los alumnos de Bachillerato.",
+                  "los alumnos de Secundaria."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Los alumnos de 4º de secundaria van a visitar _____________",
+                opciones: [
+                  "una radio.",
+                  "una exposición.",
+                  "una feria."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "El _____________ se celebra el concurso de comida.",
+                opciones: [
+                  "30 de octubre.",
+                  "15 de octubre.",
+                  "2 de octubre."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Para participar en el concurso de la fiesta de Halloween, debes inscribirte antes del _____________",
+                opciones: [
+                  "25 de octubre.",
+                  "30 de octubre.",
+                  "1 de noviembre"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "La feria del libro va a ser en _____________",
+                opciones: [
+                  "el gimnasio.",
+                  "el patio.",
+                  "un aula."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Todos los alumnos pueden asistir a clases de _____________",
+                opciones: [
+                  "baile.",
+                  "tecnología.",
+                  "lectura de prensa."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "_____________ pueden ir a la actividad deportiva.",
+                opciones: [
+                  "Todos los alumnos.",
+                  "Los alumnos de Bachillerato.",
+                  "Los alumnos de Secundaria."
+                ],
+                correcta: 0
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE A1 Escolar — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Seleccione la imagen que responde a la pregunta.",
+            contexto: "Transcripción: Conversaciones sobre ir a jugar al tenis, vacaciones en la playa, estudiar matemáticas, elegir gafas azules y amarillas, y tiempo soleado.",
+            preguntas: [
+              {
+                enunciado: "¿A dónde va el chico?",
+                opciones: [
+                  "A jugar al tenis.",
+                  "A la biblioteca.",
+                  "Al cine."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Dónde va a ir de vacaciones el chico?",
+                opciones: [
+                  "A la montaña.",
+                  "A un campamento.",
+                  "A la playa."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué va a hacer la chica el sábado por la mañana?",
+                opciones: [
+                  "Estudiar.",
+                  "Montar a caballo.",
+                  "Ir a casa de su abuela."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué gafas prefiere el chico?",
+                opciones: [
+                  "Negras.",
+                  "Azules y amarillas.",
+                  "Marrones."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Qué tiempo va a hacer mañana?",
+                opciones: [
+                  "Sol.",
+                  "Lluvia.",
+                  "Frío."
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Relacione las imágenes (A-I) con los mensajes (6-10).",
+            contexto: "Transcripción: Mensajes sobre pedir comida, rebajas de ropa, excursiones a la montaña, retraso de un vuelo y ir al supermercado.",
+            preguntas: [
+              {
+                enunciado: "Mensaje 1 (Comida)",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Mensaje 2 (Ropa)",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Mensaje 3 (Montaña)",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Mensaje 4 (Avión)",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Mensaje 5 (Supermercado)",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 8
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Relacione los nombres de los compañeros con la información sobre ellos.",
+            contexto: "Transcripción: Ana habla de sus compañeros: Estela (vive cerca), Javier (no estudia), Yolanda (biblioteca), José (tímido), Maribel (nadar), Felipe (estudia mucho), Isabel (actriz), Carlos (juegos Internet).",
+            preguntas: [
+              {
+                enunciado: "Estela",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Javier",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Yolanda",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "José",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Maribel",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Felipe",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 9
+              },
+              {
+                enunciado: "Isabel",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 11
+              },
+              {
+                enunciado: "Carlos",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 10
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Seleccione una opción del cuadro (A-I) para completar las frases sobre las vacaciones de Alicia.",
+            contexto: "Transcripción: Alicia habla de su rutina de verano: se levanta a las 9, estudia inglés, va a la piscina 2 horas, come a las 3, va al cine los miércoles, juega al fútbol martes y jueves, y juega al ordenador todos los días.",
+            preguntas: [
+              {
+                enunciado: "___________ desayunar tarde en verano.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "___________ estudiar inglés.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Está en la piscina ____________ horas.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En verano come normalmente a las ___________. ",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "El cine es más barato _____________.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Hace deporte _____________.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Juega al ordenador _____________.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I"
+                ],
+                correcta: 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    a2b1: {
+      lectura: {
+        titulo: "DELE A2/B1 Escolar — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Relaciona a los jóvenes (1-6) con los anuncios (A-J). HAY TRES TEXTOS QUE NO DEBES RELACIONAR.",
+            contexto: "Jóvenes buscan actividades y anuncios de una revista.",
+            preguntas: [
+              {
+                enunciado: "María: Busco información sobre cursos de idiomas para jóvenes. Necesito unas clases extra porque tengo un examen de inglés básico el próximo mes de mayo. Es urgente.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Álvaro: Me gustaría tener información sobre algún programa interesante de actividades culturales para niños. Mi hijo tiene 8 años y le gusta mucho dibujar y pintar.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Yolanda: Somos cinco jóvenes de 18 a 20 años y queremos formar un grupo, de más o menos quince personas, para ir los sábados a esquiar juntos.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "David: Quiero hacer algo útil durante las vacaciones de verano y colaborar en algún programa especial dirigido a jóvenes de mi edad. Me llamo Raúl y tengo 16 años.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Sara: Como no tengo nada que hacer este fin de semana y mis amigos están ocupados, me gustaría hacer una excursión o una visita cultural con un grupo organizado.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Antonio: Soy estudiante de Economía y estoy buscando un curso intensivo de inglés de los negocios. Me gustaría tener una clase con pocos estudiantes. Mi nivel de inglés es bastante alto.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 9
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Relaciona las preguntas (7-12) con los textos (A / B / C).",
+            contexto: "Foro sobre el peor viaje de sus vidas. A: Arturo, B: Bruno, C: Carlos.",
+            preguntas: [
+              {
+                enunciado: "¿Quién se encontró mal durante el viaje?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿Quién tuvo un problema porque no le organizaron bien el viaje?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Para quién fue un problema el mal tiempo?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿A quién no le gustó el hotel?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Quién estuvo unos días sin sus cosas?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Quién tuvo problemas con su compañero de viaje?",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Seleccione la respuesta correcta (A / B / C) sobre Elvira Lindo y Manolito Gafotas.",
+            contexto: "Biografía de Elvira Lindo y la creación de su personaje más famoso.",
+            preguntas: [
+              {
+                enunciado: "Según el texto, Elvira Lindo…",
+                opciones: [
+                  "obtuvo fama con sus libros de Manolito Gafotas.",
+                  "muestra en sus artículos la vida real de España.",
+                  "fue en sus inicios una famosa locutora de radio."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En el texto se dice que Elvira Lindo…",
+                opciones: [
+                  "ha actuado en algunas obras de teatro.",
+                  "llevó a la televisión su programa de radio.",
+                  "ha escrito para distintos medios de comunicación."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El personaje de Manolito Gafotas…",
+                opciones: [
+                  "está basado en una persona real.",
+                  "lo creó Lindo para su primera novela.",
+                  "aparece en las novelas con su familia."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En el texto se dice que los libros de Manolito Gafotas…",
+                opciones: [
+                  "siempre llevan el nombre de Manolito en el título.",
+                  "muestran al protagonista con distintas edades.",
+                  "han ganado varios concursos de literatura en España."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Con respecto a las adaptaciones de las novelas de Manolito al cine, el texto dice que… ",
+                opciones: [
+                  "hasta el momento se han hecho dos.",
+                  "Lindo ha participado en todas ellas.",
+                  "las ha realizado siempre el mismo director."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según el texto, actualmente Elvira Lindo… ",
+                opciones: [
+                  "se dedica en exclusiva a las novelas.",
+                  "ha dejado de escribir literatura para jóvenes.",
+                  "escribe para distintos medios y públicos."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Rellene los huecos (19-25) con la opción correcta (A / B / C).",
+            contexto: "Quino gana el premio Príncipe de Asturias. Texto sobre el creador de Mafalda.",
+            preguntas: [
+              {
+                enunciado: "Hueco 19",
+                opciones: [
+                  "más",
+                  "tan",
+                  "tal"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 20",
+                opciones: [
+                  "igual",
+                  "exacto",
+                  "mismo"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 21",
+                opciones: [
+                  "de",
+                  "entre",
+                  "en medio de"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 22",
+                opciones: [
+                  "desde hace",
+                  "hace",
+                  "desde"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 23",
+                opciones: [
+                  "le",
+                  "se",
+                  "lo"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 24",
+                opciones: [
+                  "desea",
+                  "lucha",
+                  "sueña"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 25",
+                opciones: [
+                  "idiomas",
+                  "países",
+                  "libros"
+                ],
+                correcta: 0
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE A2/B1 Escolar — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Seleccione la opción correcta (A / B / C) para cada conversación.",
+            contexto: "Transcripción: Conversaciones sobre un intercambio de idiomas, comida ligera en el comedor, excursiones fallidas a Santander, pedir un videojuego, llevar a los padres al aeropuerto, el día del cine barato y renovación de carnés.",
+            preguntas: [
+              {
+                enunciado: "¿Para qué han quedado Marta y Pierre el sábado?",
+                opciones: [
+                  "Hacer deporte.",
+                  "Comer.",
+                  "Jugar al tenis."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué ha elegido el chico para comer?",
+                opciones: [
+                  "Sopa.",
+                  "Ensalada.",
+                  "Pescado."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué lugar quería visitar la mujer?",
+                opciones: [
+                  "Santander.",
+                  "Aguilar.",
+                  "La Olmeda."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué le ha pedido el chico a la chica?",
+                opciones: [
+                  "Un libro.",
+                  "Un videojuego.",
+                  "Un ordenador."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "¿En qué lugar tiene que estar Carlos a las nueve?",
+                opciones: [
+                  "En el aeropuerto.",
+                  "En el hotel.",
+                  "En casa de sus padres."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "¿Qué día es más barato el cine?",
+                opciones: [
+                  "El lunes.",
+                  "El jueves.",
+                  "El viernes."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "¿Qué le ha pedido la mujer al chico?",
+                opciones: [
+                  "Una foto nueva.",
+                  "El carné antiguo.",
+                  "Las notas."
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Selecciona el enunciado (A-J) que corresponde a cada mensaje.",
+            contexto: "Transcripción: Mensajes sobre reciclaje, concurso de tapas, academia de música, restaurante La Villa, préstamo de bicicletas, premio de literatura y escuela de atletismo.",
+            preguntas: [
+              {
+                enunciado: "Mensaje 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Mensaje 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Mensaje 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Mensaje 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Mensaje 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Mensaje 6",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ],
+                correcta: 1
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Indique si los enunciados (14-19) se refieren a Ana (A), a Pedro (B) o a ninguno de los dos (C).",
+            contexto: "Transcripción: Ana y Pedro hablan de llegar tarde al cine, fotos en una fiesta y un ordenador roto.",
+            preguntas: [
+              {
+                enunciado: "Ha explicado por qué no ha sido puntual.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Propone ver una película de miedo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hizo fotos en la fiesta de un amigo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Cuenta por qué no entró en el blog de Juan.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Le gustaría tener un ordenador nuevo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Trabaja en una tienda de ordenadores.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Seleccione la opción correcta (A / B/ C) para cada noticia radiofónica.",
+            contexto: "Transcripción: Noticias sobre la gira de Maná, un concurso de pintura y fotografía del Ayuntamiento, y el Festival Internacional de cine en Santiago.",
+            preguntas: [
+              {
+                enunciado: "Según la audición, el grupo Maná…",
+                opciones: [
+                  "dará trece conciertos en España.",
+                  "lleva dos años sin tocar en directo.",
+                  "va a presentar su nuevo trabajo en Murcia."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En la audición se dice que Maná…",
+                opciones: [
+                  "ha grabado un DVD en México D.F.",
+                  "ha descubierto a jóvenes músicos en un concierto.",
+                  "ha encontrado nuevos guitarristas para la banda."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según la audición, el objetivo del concurso es…",
+                opciones: [
+                  "conocer cómo es la vida cotidiana en el campo.",
+                  "ayudar a los jóvenes artistas de esa región.",
+                  "informar sobre las actividades de los centros escolares."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "En la audición se dice que…",
+                opciones: [
+                  "las inscripciones se deberán presentar en el Ayuntamiento.",
+                  "el Ayuntamiento publicará los trabajos premiados.",
+                  "el periódico La Región dará un regalo a los participantes."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Según la audición, el Festival de cine…",
+                opciones: [
+                  "se celebra por primera vez en Santiago.",
+                  "va a invitar a un famoso director español.",
+                  "proyectará veinticinco películas de Hispanoamérica."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "En la audición se dice que…",
+                opciones: [
+                  "unos jóvenes elegirán una de las películas ganadoras.",
+                  "las entradas se pueden comprar en Internet.",
+                  "las películas se podrán ver en los colegios de la ciudad."
+                ],
+                correcta: 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    b2c1: {
+      lectura: {
+        titulo: "DELE B2/C1 Escolar — Comprensión de lectura",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Selecciona la opción correcta (a / b / c) sobre el estudio del autillo en Segovia.",
+            contexto: "Proyecto 'Segovia suena Autillo' para estudiar el ave nocturna más pequeña de la península.",
+            preguntas: [
+              {
+                enunciado: "El autillo europeo…",
+                opciones: [
+                  "tiene como hábitat permanente la península ibérica.",
+                  "es de un color parecido a las ramas de los árboles.",
+                  "se distingue con dificultad por su reducido tamaño."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En Segovia el autillo europeo pone sus huevos en…",
+                opciones: [
+                  "bosques que estén cerca del río.",
+                  "nidos que construye en los parques.",
+                  "cajas creadas para esta finalidad."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El proyecto «Segovia suena Autillo»…",
+                opciones: [
+                  "se celebrará por primera vez en el mes de abril.",
+                  "ayudará a calcular el número de estas aves en la ciudad.",
+                  "realizará un seminario sobre el canto del autillo."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "El Ayuntamiento de Segovia pide a sus habitantes que…",
+                opciones: [
+                  "anoten si a lo largo del día 27 se oye el canto del autillo.",
+                  "informen de la dirección desde donde estaban escuchando.",
+                  "llamen a Segovia Educa en Verde al oír al autillo."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "El mapa sonoro del autillo en la ciudad de Segovia…",
+                opciones: [
+                  "se publicará tras ser revisado por expertos.",
+                  "contaba con 60 localizaciones en ediciones pasadas.",
+                  "demuestra la disminución del ave en la ciudad."
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Relaciona los enunciados (6 - 11) con las reseñas de libros (A, B, C o D).",
+            contexto: "Reseñas de libros: A: Mis whatsapp con mamá, B: Si tú me dices ven..., C: Una obra en progreso, D: Si decido quedarme.",
+            preguntas: [
+              {
+                enunciado: "Uno de los personajes tenía una influencia negativa en su estado de ánimo.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "El libro destaca el valor de la experiencia y conocimiento de los mayores.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Es una lectora habitual de este escritor.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Considera que la temática del libro es superior a la calidad del texto.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Siente admiración por el autor del libro.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Inicialmente la lectora no estaba interesada en el libro.",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                correcta: 0
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Lee el texto y rellena los huecos (12-22) con la opción correcta (a / b / c).",
+            contexto: "La tortuga Lora, símbolo de la defensa de las playas de Costa Rica\nLa extracción de conchas marinas provoca la alarma en Costa Rica.\nEl robo masivo a manos de los turistas en las playas del país podría afectar tanto al equilibrio medioambiental como a la belleza natural de los paisajes costeros.\nDe acuerdo con un estudio llevado a cabo por la Universidad de Costa Rica entre 2021 y 2022, las autoridades aeroportuarias del país llegaron a acumular hasta diez toneladas de conchas, caracoles, corales y estrellas de mar de los equipajes de los turistas.\nEste último aeropuerto ha lanzado una campaña para concienciar a los visitantes de la importancia de mantener las conchas en las playas. La mascota Lora, el dibujo de una simpática tortuga, servirá de embajadora de esta lucha medioambiental.\nOpciones huecos 12-22: cabo/fin/cargo | salvo/mientras/hasta | ha fundado/ha ingresado/ha lanzado | hayan/hubieran/habían | de ahí que/dado que/hasta que | más/muchas/tanto | que/cual/cuyo | defecto/estorbo/reto | trastornos/fastidios/síntomas | más bien/a modo/en virtud | recojan/recogerían/recogieran",
+            preguntas: [
+              {
+                enunciado: "Hueco 12",
+                opciones: [
+                  "cabo",
+                  "fin",
+                  "cargo"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 13",
+                opciones: [
+                  "salvo",
+                  "mientras",
+                  "hasta"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 14",
+                opciones: [
+                  "ha fundado",
+                  "ha ingresado",
+                  "ha lanzado"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 15",
+                opciones: [
+                  "hayan",
+                  "hubieran",
+                  "habían"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 16",
+                opciones: [
+                  "de ahí que",
+                  "dado que",
+                  "hasta que"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 17",
+                opciones: [
+                  "más",
+                  "muchas",
+                  "tanto"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 18",
+                opciones: [
+                  "que",
+                  "cual",
+                  "cuyo"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 19",
+                opciones: [
+                  "defecto",
+                  "estorbo",
+                  "reto"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 20",
+                opciones: [
+                  "trastornos",
+                  "fastidios",
+                  "síntomas"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Hueco 21",
+                opciones: [
+                  "más bien",
+                  "a modo",
+                  "en virtud"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 22",
+                opciones: [
+                  "recojan",
+                  "recogerían",
+                  "recogieran"
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Responda a las preguntas (23 - 27) sobre el arte del storyboard.",
+            contexto: "El arte del storyboard. Planificación gráfica del guion en cine, publicidad y videojuegos.",
+            preguntas: [
+              {
+                enunciado: "La artista Maca Gil…",
+                opciones: [
+                  "se unió al proyecto de Robot Dreams con antelación al rodaje.",
+                  "fue una de las premiadas en una gala de cine.",
+                  "distingue entre su oficio de guionista y de dibujante de cómics."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "El storyboard debe…",
+                opciones: [
+                  "prescindir de las descripciones de los personajes.",
+                  "llevar una serie de códigos numéricos para el montaje.",
+                  "incorporar información técnica para la grabación."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "El proceso de elaboración de un storyboard…",
+                opciones: [
+                  "varía según las particularidades de cada formato audiovisual.",
+                  "resulta esencial para la producción de anuncios publicitarios.",
+                  "va cambiando según las sucesivas versiones de los videojuegos."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Los primeros storyboards de la historia…",
+                opciones: [
+                  "se crearon para obras de cine mudo.",
+                  "se usaron en películas de dibujos animados.",
+                  "se hacían para escenas con efectos especiales."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Según David Villarrubia, la profesión de guionista gráfico…",
+                opciones: [
+                  "carece de salidas profesionales bien remuneradas.",
+                  "se puede ejercer sin tener talento en el arte del dibujo.",
+                  "implica considerar cuestiones de edición cinematográfica."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 5",
+            instruccion: "Decida en qué lugar del texto (28 - 32) hay que colocar cada uno de los fragmentos (A - G). HAY DOS FRAGMENTOS QUE NO TIENES QUE ELEGIR.",
+            contexto: "La futbolista Aitana Bonmatí gana el Premio a la mejor jugadora del año. Trayectoria y disciplina de la jugadora del FC Barcelona.",
+            preguntas: [
+              {
+                enunciado: "Hueco 28",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Hueco 29",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Hueco 30",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 5
+              },
+              {
+                enunciado: "Hueco 31",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Hueco 32",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G"
+                ],
+                correcta: 0
+              }
+            ]
+          }
+        ]
+      },
+      auditiva: {
+        titulo: "DELE B2/C1 Escolar — Comprensión auditiva",
+        tareas: [
+          {
+            nombre: "Tarea 1",
+            instruccion: "Selecciona el enunciado (A - K) que corresponde al tema del que habla cada persona (1 - 7).",
+            contexto: "Transcripción: Jóvenes hablan de sus trabajos de verano: recogepelotas en tenis, reparto a domicilio, paseadora de perros, ayuda a ancianos, clases de inglés, cuidado de niños y voluntariado en banco de alimentos.",
+            preguntas: [
+              {
+                enunciado: "Persona 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Persona 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Persona 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 6
+              },
+              {
+                enunciado: "Persona 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Persona 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 10
+              },
+              {
+                enunciado: "Persona 6",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 8
+              },
+              {
+                enunciado: "Persona 7",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K"
+                ],
+                correcta: 3
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 2",
+            instruccion: "Selecciona la opción correcta (a / b / c) de la entrevista a María Dueñas.",
+            contexto: "Transcripción: María Dueñas habla de su premio Princesa de Girona, su afición por el violín desde niña, sus estudios en Dresde y Viena, y su primer disco.",
+            preguntas: [
+              {
+                enunciado: "Sobre el premio recibido, María Dueñas dice que…",
+                opciones: [
+                  "dará proyección internacional a su carrera.",
+                  "representa un éxito para la música española.",
+                  "es motivador para otros músicos jóvenes."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "María Dueñas dice que comenzó a tocar el violín…",
+                opciones: [
+                  "para continuar la tradición musical de su familia.",
+                  "porque sintió una conexión personal con él.",
+                  "motivada por los conciertos de un famoso violinista."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "María Dueñas dice que sus estudios en Dresde…",
+                opciones: [
+                  "representaron un gran esfuerzo para su familia.",
+                  "iniciaron su etapa de formación fuera de España.",
+                  "supusieron un choque cultural para ella."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "En su carrera profesional, María Dueñas desea…",
+                opciones: [
+                  "explorar otros estilos de música.",
+                  "escribir sus propias obras musicales.",
+                  "probar también en el mundo del canto."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Sobre su primer disco, María Dueñas explica que…",
+                opciones: [
+                  "combina piezas de varios músicos austriacos.",
+                  "representa muy bien su identidad como violinista.",
+                  "es una grabación de un concierto de Año Nuevo."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Según María Dueñas, sus estudios universitarios…",
+                opciones: [
+                  "la conectan con otros ámbitos de la realidad.",
+                  "están alejados de su formación musical.",
+                  "son difíciles de combinar con los conciertos."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Actualmente, María Dueñas vive en…",
+                opciones: [
+                  "Viena.",
+                  "Granada.",
+                  "Dresde."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "María Dueñas recomienda a los jóvenes…",
+                opciones: [
+                  "buscar hasta encontrar lo que les gusta",
+                  "evitar compararse con otras personas.",
+                  "creer siempre en su propia capacidad."
+                ],
+                correcta: 2
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 3",
+            instruccion: "Elija los siete enunciados (A - L) que corresponden al reportaje sobre lugares fascinantes.",
+            contexto: "Transcripción: Reportaje sobre el Banco Mundial de Semillas de Svalbard, la isla Queimada Grande en Brasil y la roca Uluru en Australia.",
+            preguntas: [
+              {
+                enunciado: "Opción 1",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Opción 2",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Opción 3",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 3
+              },
+              {
+                enunciado: "Opción 4",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 4
+              },
+              {
+                enunciado: "Opción 5",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 7
+              },
+              {
+                enunciado: "Opción 6",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 9
+              },
+              {
+                enunciado: "Opción 7",
+                opciones: [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                correcta: 11
+              }
+            ]
+          },
+          {
+            nombre: "Tarea 4",
+            instruccion: "Seleccione la opción correcta (a / b / c) para cada conversación.",
+            contexto: "Transcripción: Conversaciones sobre una comida con la abuela, planes de estudio en España, reparación de un móvil y una nueva compañera de clase argentina.",
+            preguntas: [
+              {
+                enunciado: "Para comer, la abuela va a preparar…",
+                opciones: [
+                  "un plato nuevo.",
+                  "paella de pollo.",
+                  "un postre especial."
+                ],
+                correcta: 0
+              },
+              {
+                enunciado: "Sobre el examen, el chico dice que…",
+                opciones: [
+                  "no lo ha preparado suficientemente.",
+                  "es una repetición de otra prueba .",
+                  "le pusieron una nota injusta."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "El chico quiere…",
+                opciones: [
+                  "continuar con la carrera que hacía.",
+                  "entrar en un programa de intercambio.",
+                  "empezar unos nuevos estudios."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Para realizar los estudios en España, al chico le falta… ",
+                opciones: [
+                  "pasar un examen..",
+                  "traducir un título.",
+                  "convalidar asignaturas."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Al chico le interesa que la reparación de la pantalla… ",
+                opciones: [
+                  "cueste menos de 180 euros.",
+                  "se pueda hacer rápidamente.",
+                  "incluya una garantía mínima."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Finalmente, el chico va a… ",
+                opciones: [
+                  "adquirir un teléfono nuevo.",
+                  "comprar la pieza que necesita.",
+                  "tomarse un tiempo para decidir."
+                ],
+                correcta: 2
+              },
+              {
+                enunciado: "Beatriz piensa que la nueva compañera, Carla, es una persona…",
+                opciones: [
+                  "nerviosa.",
+                  "simpática.",
+                  "interesante."
+                ],
+                correcta: 1
+              },
+              {
+                enunciado: "Por la conversación se sabe que…",
+                opciones: [
+                  "la nueva compañera habla varias lenguas.",
+                  "a Beatriz no le gustan los viajes al extranjero.",
+                  "a David le gustaría vivir en otros países."
+                ],
+                correcta: 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+};
+
+function obtenerExamen(tipo, nivel, prueba) {
+  const datos = EXAMENES_DATA[tipo]?.[nivel]?.[prueba];
+  if (!datos || !datos.tareas?.length) return null;
+  const lista = [];
+  let num = 1;
+  datos.tareas.forEach(function (tarea) {
+    tarea.preguntas.forEach(function (p) {
+      lista.push({
+        numero: num++,
+        tarea: tarea.nombre,
+        instruccion: tarea.instruccion,
+        contexto: tarea.contexto,
+        enunciado: p.enunciado,
+        opciones: p.opciones,
+        correcta: p.correcta
+      });
+    });
+  });
+  return { meta: datos, preguntas: lista };
+}

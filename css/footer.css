@@ -1,0 +1,105 @@
+/* =============================================
+   PIE DE PÁGINA
+   ============================================= */
+
+.pie {
+  margin-top: auto;
+  background-color: var(--color-gris-claro);
+  border-top: 1px solid var(--color-gris-borde);
+  color: var(--color-gris-texto);
+}
+
+.pie__contenedor {
+  padding-block: var(--espacio-xl);
+}
+
+.pie__grid {
+  display: grid;
+  gap: var(--espacio-xl);
+}
+
+.pie__titulo-seccion {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-rojo-cervantes);
+  margin-bottom: var(--espacio-md);
+}
+
+.pie__texto {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  max-width: 40ch;
+}
+
+.pie__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-sm);
+}
+
+.pie__lista a {
+  font-size: 0.9375rem;
+  transition: color var(--transicion-rapida);
+}
+
+.pie__lista a:hover,
+.pie__lista a:focus-visible {
+  color: var(--color-rojo-cervantes);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pie__lista a:focus-visible {
+  outline: 2px solid var(--color-rojo-cervantes);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.pie__contacto-dato {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+.pie__contacto-dato + .pie__contacto-dato {
+  margin-top: var(--espacio-xs);
+}
+
+.pie__contacto-dato a {
+  transition: color var(--transicion-rapida);
+}
+
+.pie__contacto-dato a:hover,
+.pie__contacto-dato a:focus-visible {
+  color: var(--color-rojo-cervantes);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pie__legal {
+  margin-top: var(--espacio-xl);
+  padding-top: var(--espacio-lg);
+  border-top: 1px solid var(--color-gris-borde);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--color-gris-texto);
+}
+
+.pie__legal a {
+  color: var(--color-rojo-cervantes);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .pie__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .pie__grid {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+}

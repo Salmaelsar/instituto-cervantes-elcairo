@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instituto Cervantes de El Cairo — Cursos de español, cultura hispana y diplomas DELE en Egipto.">
+  <title>Instituto Cervantes de El Cairo</title>
+  <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="imagenes/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <a href="#contenido-principal" class="saltar-contenido" data-i18n="a11y.saltar">Saltar al contenido</a>
+
+  <header class="cabecera" role="banner">
+
+    <div class="cabecera__marca">
+      <div class="contenedor cabecera__marca-contenido">
+        <a href="index.html" class="cabecera__centro-enlace" data-i18n-aria="a11y.centro">
+          <img
+            class="cabecera__centro-logo"
+            src="imagenes/cabecera/elcairo.gif"
+            alt="Instituto Cervantes. Centro de El Cairo"
+            width="495"
+            height="67"
+          >
+        </a>
+
+        <a href="https://www.cervantes.es" class="cabecera__logo-enlace" target="_blank" rel="noopener noreferrer" data-i18n-aria="a11y.cervantes">
+          <img
+            class="cabecera__logo-imagen"
+            src="imagenes/cabecera/logoic.gif"
+            alt="Portada del Instituto Cervantes"
+            width="202"
+            height="39"
+          >
+        </a>
+      </div>
+    </div>
+
+    <div class="cabecera__utilidades">
+      <div class="contenedor cabecera__utilidades-contenido">
+        <nav data-i18n-aria="a11y.utilidades">
+          <ul class="cabecera__utilidades-lista">
+            <li><a href="#sobre-nosotros" data-i18n="nav.sobre">Sobre nosotros</a></li>
+            <li><a href="#mapa-sitio" data-i18n="nav.mapa">Mapa del sitio</a></li>
+            <li><a href="#registro" data-i18n="nav.registro">Registro</a></li>
+            <li><a href="#acceso-alumnos" data-i18n="nav.alumnos">Acceso alumnos</a></li>
+            <li><a href="#buscar" data-i18n="nav.buscar">Buscar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="cabecera__navegacion">
+      <div class="contenedor cabecera__nav-contenido">
+        <button
+          id="menu-btn"
+          class="cabecera__menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-principal"
+          data-i18n-aria="a11y.menu.abrir"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <span class="cabecera__menu-etiqueta" aria-hidden="true" data-i18n="nav.menu">Menú</span>
+
+        <nav data-i18n-aria="a11y.nav">
+          <ul id="nav-principal" class="cabecera__nav-lista">
+            <li><a href="#actividades" data-i18n="nav.actividades">Actividades culturales</a></li>
+            <li><a href="#cursos" data-i18n="nav.cursos">Cursos</a></li>
+            <li><a href="#formacion" data-i18n="nav.formacion">Formación de profesores</a></li>
+            <li><a href="#dele" data-i18n="nav.dele">Diplomas DELE</a></li>
+            <li><a href="#biblioteca" data-i18n="nav.biblioteca">Biblioteca</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="cabecera__idioma">
+      <div class="contenedor cabecera__idioma-contenido">
+        <nav data-i18n-aria="a11y.idioma">
+          <ul class="cabecera__idioma-lista">
+            <li><a href="#" data-lang="es" class="activo" lang="es" hreflang="es" aria-current="true">Español</a></li>
+            <li><span class="cabecera__idioma-separador" aria-hidden="true">/</span></li>
+            <li><a href="#" data-lang="ar" lang="ar" hreflang="ar">عربي</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="hero" aria-labelledby="hero-titulo">
+    <div class="contenedor hero__contenedor">
+      <div class="hero__contenido">
+        <p class="hero__etiqueta" data-i18n="hero.etiqueta">Centro de El Cairo</p>
+        <h1 id="hero-titulo" class="hero__titulo" data-i18n="hero.titulo">Bienvenido al Instituto Cervantes</h1>
+        <p class="hero__texto" data-i18n="hero.texto">
+          El lugar de encuentro de la cultura española e hispanoamericana a orillas del Nilo.
+          Practica con nuestro simulador del examen DELE y refuerza tu comprensión lectora y auditiva.
+        </p>
+        <div class="hero__acciones">
+          <a href="#simulador-dele" class="hero__cta" data-i18n="hero.cta">Practicar examen DELE</a>
+          <a href="https://elcairo.cervantes.es/es/default.shtm" class="hero__enlace-secundario" target="_blank" rel="noopener noreferrer" data-i18n="hero.oficial">Visitar sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="contenido-principal" class="contenido-principal">
+    <div class="contenedor">
+
+      <section id="actividades" class="seccion ancla-seccion" aria-labelledby="actividades-titulo">
+        <h2 id="actividades-titulo" class="seccion__titulo" data-i18n="actividades.titulo">Actividades culturales</h2>
+        <p class="seccion__intro" data-i18n="actividades.intro">
+          El centro organiza un variado programa cultural para acercar la creatividad y el pensamiento
+          de España y América Latina al público egipcio: cine, música, conferencias, exposiciones y encuentros
+          con autores.
+        </p>
+        <ul class="seccion__lista">
+          <li data-i18n="actividades.l1">Ciclos de cine y documentales en español.</li>
+          <li data-i18n="actividades.l2">Conciertos, recitales y actuaciones en directo.</li>
+          <li data-i18n="actividades.l3">Conferencias, mesas redondas y presentaciones de libros.</li>
+          <li data-i18n="actividades.l4">Exposiciones de arte y actividades para familias.</li>
+        </ul>
+        <p class="seccion__enlaces">
+          <a href="https://elcairo.cervantes.es/es/default.shtm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="actividades.enlace">Ver agenda en el sitio oficial</a>
+        </p>
+      </section>
+
+      <section id="cursos" class="seccion ancla-seccion" aria-labelledby="cursos-titulo">
+        <h2 id="cursos-titulo" class="seccion__titulo" data-i18n="cursos.titulo">Cursos de español</h2>
+        <p class="seccion__intro" data-i18n="cursos.intro">
+          Aprende español con metodología comunicativa y profesorado acreditado. Ofrecemos cursos
+          presenciales para todos los niveles del Marco Común Europeo de Referencia (A1–C2), adaptados
+          a adultos, jóvenes y necesidades profesionales.
+        </p>
+        <div class="seccion__grid seccion__grid--tres">
+          <article class="seccion__tarjeta">
+            <h3 class="seccion__tarjeta-titulo" data-i18n="cursos.t1">Cursos generales</h3>
+            <p class="seccion__tarjeta-texto" data-i18n="cursos.t1texto">Itinerarios anuales por niveles, con grupos reducidos y seguimiento personalizado del aprendizaje.</p>
+          </article>
+          <article class="seccion__tarjeta">
+            <h3 class="seccion__tarjeta-titulo" data-i18n="cursos.t2">Español profesional</h3>
+            <p class="seccion__tarjeta-texto" data-i18n="cursos.t2texto">Formación orientada al ámbito laboral, académico o de negocios para quienes necesitan español con fines específicos.</p>
+          </article>
+          <article class="seccion__tarjeta">
+            <h3 class="seccion__tarjeta-titulo" data-i18n="cursos.t3">Aula Virtual de Español</h3>
+            <p class="seccion__tarjeta-texto" data-i18n="cursos.t3texto">Cursos en línea del Instituto Cervantes para estudiar desde cualquier lugar con la misma calidad académica.</p>
+          </article>
+        </div>
+
+        <h3 id="registro" class="seccion__subtitulo ancla-seccion" data-i18n="cursos.matricula">Matrícula e información</h3>
+        <p class="seccion__dato" data-i18n="cursos.matriculaTexto" data-i18n-html>
+          Para consultar plazos, precios y formalizar la matrícula, contacta con secretaría en
+          <a href="mailto:info.cairo@cervantes.es">info.cairo@cervantes.es</a>,
+          por WhatsApp al <a href="https://wa.me/201285062010">0128 506 2010</a>
+          o visita el centro de domingo a jueves.
+        </p>
+        <p class="seccion__enlaces">
+          <a href="https://elcairo.cervantes.es/es/cursos_espanol/matricula_curso_espanol.htm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="cursos.enlace1">Información de matrícula</a>
+          <a href="https://ave.cervantes.es" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="cursos.enlace2">Aula Virtual de Español (AVE)</a>
+        </p>
+      </section>
+
+      <section id="formacion" class="seccion ancla-seccion" aria-labelledby="formacion-titulo">
+        <h2 id="formacion-titulo" class="seccion__titulo" data-i18n="formacion.titulo">Formación de profesores</h2>
+        <p class="seccion__intro" data-i18n="formacion.intro">
+          El Instituto Cervantes de El Cairo imparte programas de actualización y especialización
+          para docentes de español como lengua extranjera, con el respaldo de la experiencia
+          pedagógica de la red Cervantes.
+        </p>
+        <ul class="seccion__lista">
+          <li data-i18n="formacion.l1">Cursos de metodología y didáctica del español (ELE).</li>
+          <li data-i18n="formacion.l2">Formación continuada para profesores en activo.</li>
+          <li data-i18n="formacion.l3">Recursos y orientación para la preparación de oposiciones y certificaciones docentes.</li>
+        </ul>
+        <p class="seccion__enlaces">
+          <a href="https://elcairo.cervantes.es/es/default.shtm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="formacion.enlace1">Consultar oferta formativa</a>
+          <a href="mailto:cencai@cervantes.es" class="seccion__enlace" data-i18n="formacion.enlace2">Solicitar información</a>
+        </p>
+      </section>
+
+      <section id="dele" class="seccion ancla-seccion" aria-labelledby="dele-titulo">
+        <h2 id="dele-titulo" class="seccion__titulo" data-i18n="dele.titulo">Diplomas DELE</h2>
+        <p class="seccion__intro" data-i18n="dele.intro">
+          Los Diplomas de Español como Lengua Extranjera (DELE) son títulos oficiales acreditados
+          por el Instituto Cervantes en nombre del Ministerio de Educación de España. Tienen validez
+          indefinida y reconocimiento internacional.
+        </p>
+        <div class="seccion__grid">
+          <article class="seccion__tarjeta">
+            <h3 class="seccion__tarjeta-titulo" data-i18n="dele.t1">Niveles disponibles</h3>
+            <p class="seccion__tarjeta-texto" data-i18n="dele.t1texto">Desde A1 hasta C2 para adultos, y modalidad escolar para candidatos de 11 a 17 años (A1, A2/B1 y B2/C1).</p>
+          </article>
+          <article class="seccion__tarjeta">
+            <h3 class="seccion__tarjeta-titulo" data-i18n="dele.t2">Inscripción y convocatorias</h3>
+            <p class="seccion__tarjeta-texto" data-i18n="dele.t2texto">El Cairo es centro examinador. Consulta fechas, tarifas y plazos de inscripción en la web oficial del centro.</p>
+          </article>
+        </div>
+        <aside class="seccion__destacado" aria-labelledby="dele-simulador-titulo">
+          <h3 id="dele-simulador-titulo" class="seccion__destacado-titulo" data-i18n="dele.destacado">Prepara tu examen aquí</h3>
+          <p class="seccion__destacado-texto" data-i18n="dele.destacadoTexto">
+            Utiliza nuestro simulador con preguntas oficiales de modelos DELE: comprensión lectora
+            y auditiva para adultos y escolares, con corrección inmediata.
+          </p>
+          <a href="#simulador-dele" class="hero__cta" data-i18n="dele.cta">Ir al simulador DELE</a>
+        </aside>
+        <p class="seccion__enlaces">
+          <a href="https://examenes.cervantes.es/es/dele/que-es" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="dele.enlace1">¿Qué es el DELE?</a>
+          <a href="https://elcairo.cervantes.es/es/default.shtm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="dele.enlace2">Inscripción en El Cairo</a>
+        </p>
+      </section>
+
+      <section id="biblioteca" class="seccion ancla-seccion" aria-labelledby="biblioteca-titulo">
+        <h2 id="biblioteca-titulo" class="seccion__titulo" data-i18n="biblioteca.titulo">Biblioteca</h2>
+        <p class="seccion__intro" data-i18n="biblioteca.intro">
+          La biblioteca del centro pone a disposición del público fondos en español de literatura,
+          humanidades, arte y referencia, además de medios audiovisuales y revistas para el estudio
+          y la difusión cultural.
+        </p>
+        <ul class="seccion__lista">
+          <li data-i18n="biblioteca.l1">Préstamo de libros, DVD y material didáctico.</li>
+          <li data-i18n="biblioteca.l2">Consulta en sala de lectura y acceso a recursos digitales.</li>
+          <li data-i18n="biblioteca.l3">Actividades de animación a la lectura y clubes de conversación.</li>
+        </ul>
+        <p class="seccion__dato" data-i18n="biblioteca.email" data-i18n-html>
+          Biblioteca: <a href="mailto:bibcai@cervantes.es">bibcai@cervantes.es</a>
+        </p>
+        <p class="seccion__enlaces">
+          <a href="https://elcairo.cervantes.es/es/default.shtm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="biblioteca.enlace">Horario y servicios</a>
+        </p>
+      </section>
+
+      <section id="acceso-alumnos" class="seccion seccion--utilidad ancla-seccion" aria-labelledby="acceso-titulo">
+        <h2 id="acceso-titulo" class="seccion__titulo" data-i18n="alumnos.titulo">Acceso alumnos</h2>
+        <p class="seccion__intro" data-i18n="alumnos.intro">
+          Si ya estás matriculado, accede a la plataforma del Aula Virtual de Español (AVE) para
+          consultar tus clases, materiales y actividades en línea.
+        </p>
+        <p class="seccion__enlaces">
+          <a href="https://ave.cervantes.es" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="alumnos.enlace">Entrar al AVE</a>
+        </p>
+      </section>
+
+      <section id="buscar" class="seccion seccion--utilidad ancla-seccion" aria-labelledby="buscar-titulo">
+        <h2 id="buscar-titulo" class="seccion__titulo" data-i18n="buscar.titulo">Buscar</h2>
+        <p class="seccion__intro" data-i18n="buscar.intro">
+          Para buscar cursos, actividades, noticias y documentos del centro, utiliza el buscador
+          del sitio web oficial del Instituto Cervantes de El Cairo.
+        </p>
+        <p class="seccion__enlaces">
+          <a href="https://elcairo.cervantes.es/es/default.shtm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="buscar.enlace">Abrir sitio oficial y buscar</a>
+        </p>
+      </section>
+
+      <section id="simulador-dele" class="simulador ancla-seccion" aria-labelledby="simulador-titulo">
+        <h2 id="simulador-titulo" class="simulador__titulo" data-i18n="simulador.titulo">Simulador DELE</h2>
+        <p class="simulador__intro" data-i18n="simulador.intro" data-i18n-html>
+          Practica el examen DELE completo: elige si eres <strong>adulto</strong> o <strong>escolar (12–18 años)</strong>,
+          tu nivel, la prueba de <strong>lectura</strong> o <strong>auditiva</strong>, y comprueba tus respuestas.
+        </p>
+
+        <div class="simulador__selector">
+          <label class="simulador__etiqueta" for="select-tipo" data-i18n="simulador.tipo">Tipo de examen</label>
+          <select id="select-tipo" class="simulador__select">
+            <option value="adultos" data-i18n="simulador.tipo.adultos">Adultos</option>
+            <option value="escolares" data-i18n="simulador.tipo.escolares">Escolares (12–18 años)</option>
+          </select>
+
+          <label class="simulador__etiqueta" for="select-nivel" data-i18n="simulador.nivel">Nivel</label>
+          <select id="select-nivel" class="simulador__select"></select>
+
+          <label class="simulador__etiqueta" for="select-prueba" data-i18n="simulador.prueba">Prueba</label>
+          <select id="select-prueba" class="simulador__select">
+            <option value="lectura" data-i18n="simulador.prueba.lectura">Comprensión de lectura</option>
+            <option value="auditiva" data-i18n="simulador.prueba.auditiva">Comprensión auditiva</option>
+          </select>
+
+          <button type="button" id="btn-iniciar-examen" class="btn-comprobar" data-i18n="simulador.iniciar">Empezar examen</button>
+          <p class="simulador__nota" data-i18n="simulador.nota">510 preguntas disponibles en total (lectura + auditiva).</p>
+        </div>
+
+        <div class="simulador__examen" hidden>
+          <p class="simulador__progreso" aria-live="polite"></p>
+          <p class="pregunta__tarea"></p>
+          <article class="pregunta">
+            <p class="pregunta__contexto-etiqueta"></p>
+            <pre class="pregunta__contexto" data-i18n-aria="sim.contextoLectura"></pre>
+            <p class="pregunta__numero"></p>
+            <p class="pregunta__enunciado"></p>
+            <fieldset class="pregunta__opciones"></fieldset>
+            <div class="simulador__acciones">
+              <button type="button" class="btn-comprobar" data-i18n="simulador.comprobar">Comprobar respuesta</button>
+              <button type="button" class="btn-siguiente" hidden data-i18n="sim.siguiente">Siguiente pregunta</button>
+            </div>
+            <p class="feedback" role="status" aria-live="polite" hidden></p>
+          </article>
+        </div>
+
+        <div class="simulador__resultado" hidden>
+          <h3 class="simulador__resultado-titulo" data-i18n="simulador.resultado.titulo">Resultado del examen</h3>
+          <p class="simulador__resultado-texto"></p>
+          <button type="button" class="btn-reiniciar" data-i18n="simulador.reiniciar">Elegir otro examen</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie" role="contentinfo">
+    <div class="contenedor pie__contenedor">
+      <div class="pie__grid">
+        <section id="sobre-nosotros" class="ancla-seccion">
+          <h2 class="pie__titulo-seccion" data-i18n="pie.sobre">Sobre nosotros</h2>
+          <p class="pie__texto" data-i18n="pie.sobreTexto">
+            El Instituto Cervantes de El Cairo promueve la enseñanza del español y la difusión de la cultura
+            hispánica en Egipto. Ofrece cursos, diplomas DELE, actividades culturales y biblioteca.
+          </p>
+        </section>
+
+        <section id="mapa-sitio" class="ancla-seccion">
+          <h2 class="pie__titulo-seccion" data-i18n="pie.mapa">Mapa del sitio</h2>
+          <ul class="pie__lista">
+            <li><a href="#actividades" data-i18n="nav.actividades">Actividades culturales</a></li>
+            <li><a href="#cursos" data-i18n="nav.cursos">Cursos</a></li>
+            <li><a href="#registro" data-i18n="pie.matricula">Matrícula</a></li>
+            <li><a href="#formacion" data-i18n="nav.formacion">Formación de profesores</a></li>
+            <li><a href="#dele" data-i18n="nav.dele">Diplomas DELE</a></li>
+            <li><a href="#biblioteca" data-i18n="nav.biblioteca">Biblioteca</a></li>
+            <li><a href="#simulador-dele" data-i18n="simulador.titulo">Simulador DELE</a></li>
+            <li><a href="#acceso-alumnos" data-i18n="nav.alumnos">Acceso alumnos</a></li>
+            <li><a href="https://elcairo.cervantes.es/es/default.shtm" target="_blank" rel="noopener noreferrer" data-i18n="pie.oficial">Sitio oficial del centro</a></li>
+            <li><a href="https://www.cervantes.es" target="_blank" rel="noopener noreferrer" data-i18n="pie.cervantes">Instituto Cervantes</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="pie__titulo-seccion" data-i18n="pie.contacto">Contacto</h2>
+          <p class="pie__contacto-dato" data-i18n="pie.direccion">20, Boulos Hanna St., Dokki<br>El Cairo, Egipto</p>
+          <p class="pie__contacto-dato" data-i18n="pie.tel" data-i18n-html>Tel.: <a href="tel:+20237601746">+20 2 3760 17 46</a></p>
+          <p class="pie__contacto-dato" data-i18n="pie.email" data-i18n-html>Email: <a href="mailto:cencai@cervantes.es">cencai@cervantes.es</a></p>
+          <p class="pie__contacto-dato" data-i18n="pie.horario">
+            Horario secretaría: dom.–jue., 11:00–14:00 y 16:00–18:00 h
+          </p>
+        </section>
+      </div>
+
+      <p class="pie__legal">
+        <span data-i18n="pie.legal">© Instituto Cervantes, 1991–2026. Reservados todos los derechos.</span>
+        <a href="https://www.cervantes.es/es/aviso_legal.htm" target="_blank" rel="noopener noreferrer" data-i18n="pie.aviso">Aviso legal</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/examenes-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@import url("variables.css");
+@import url("reset.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("footer.css");
+@import url("secciones.css");
+@import url("examen.css");
+@import url("rtl.css");
+@import url("movil.css");
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-principal);
+  color: var(--color-gris-texto);
+  background-color: var(--color-blanco);
+}
+
+.contenido-principal {
+  flex: 1;
+  padding: var(--espacio-xl) var(--espacio-md);
+}
+
+.contenido-principal .contenedor {
+  padding-inline: 0;
+}

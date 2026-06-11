@@ -1,0 +1,112 @@
+/* =============================================
+   AJUSTES MÓVIL
+   ============================================= */
+
+body {
+  overflow-x: hidden;
+}
+
+.ancla-seccion {
+  scroll-margin-top: var(--espacio-md);
+}
+
+@media (max-width: 768px) {
+  .contenido-principal {
+    padding: var(--espacio-lg) var(--espacio-sm);
+  }
+
+  .hero__contenedor {
+    padding-block: var(--espacio-lg);
+  }
+
+  .hero__texto {
+    font-size: 1rem;
+  }
+
+  .seccion {
+    padding-block: var(--espacio-lg);
+  }
+
+  .seccion__titulo,
+  .simulador__titulo {
+    font-size: 1.25rem;
+  }
+
+  .simulador__selector {
+    max-width: none;
+  }
+
+  .simulador__select {
+    width: 100%;
+    min-height: 2.75rem;
+    font-size: 1rem;
+  }
+
+  .simulador__acciones {
+    flex-direction: column;
+  }
+
+  .simulador__acciones .btn-comprobar,
+  .simulador__acciones .btn-siguiente {
+    width: 100%;
+    text-align: center;
+    min-height: 2.75rem;
+  }
+
+  #btn-iniciar-examen,
+  .btn-reiniciar {
+    width: 100%;
+    min-height: 2.75rem;
+  }
+
+  .pregunta {
+    padding: var(--espacio-md);
+    max-width: none;
+  }
+
+  .pregunta__contexto {
+    max-height: 14rem;
+    font-size: 0.875rem;
+    overflow-wrap: anywhere;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pregunta__enunciado {
+    font-size: 1rem;
+  }
+
+  .pregunta__opcion {
+    padding: var(--espacio-md);
+    min-height: 2.75rem;
+  }
+
+  .pregunta__opcion input {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-top: 0.15rem;
+  }
+
+  .pie__contenedor {
+    padding-block: var(--espacio-lg);
+  }
+
+  .seccion__enlaces {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__titulo {
+    font-size: 1.5rem;
+  }
+
+  .simulador__progreso {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .pregunta__tarea {
+    font-size: 0.8125rem;
+  }
+}

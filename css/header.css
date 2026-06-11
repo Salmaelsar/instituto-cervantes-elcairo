@@ -1,0 +1,358 @@
+/* =============================================
+   ENCABEZADO — Instituto Cervantes El Cairo
+   ============================================= */
+
+/* Enlace de accesibilidad: saltar al contenido */
+.saltar-contenido {
+  position: absolute;
+  top: -100%;
+  left: var(--espacio-md);
+  z-index: 1000;
+  padding: var(--espacio-sm) var(--espacio-md);
+  background: var(--color-blanco);
+  color: var(--color-rojo-cervantes);
+  font-weight: 600;
+  border-radius: 0 0 4px 4px;
+}
+
+.saltar-contenido:focus {
+  top: 0;
+  outline: 2px solid var(--color-blanco);
+  outline-offset: 2px;
+}
+
+/* Contenedor reutilizable */
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-maximo);
+  margin-inline: auto;
+  padding-inline: var(--espacio-md);
+}
+
+/* ---------- Barra superior (marca) ---------- */
+.cabecera__marca {
+  background-color: var(--color-rojo-cervantes);
+  color: var(--color-blanco);
+}
+
+.cabecera__marca-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3.5rem;
+  gap: var(--espacio-md);
+}
+
+.cabecera__centro-enlace {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  min-width: 0;
+  transition: opacity var(--transicion-rapida);
+}
+
+.cabecera__centro-enlace:hover,
+.cabecera__centro-enlace:focus-visible {
+  opacity: 0.9;
+}
+
+.cabecera__centro-enlace:focus-visible {
+  outline: 2px solid var(--color-blanco);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.cabecera__centro-logo {
+  display: block;
+  width: auto;
+  height: 2.5rem;
+  max-width: 100%;
+}
+
+.cabecera__logo-enlace {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: opacity var(--transicion-rapida);
+}
+
+.cabecera__logo-enlace:hover,
+.cabecera__logo-enlace:focus-visible {
+  opacity: 0.85;
+}
+
+.cabecera__logo-enlace:focus-visible {
+  outline: 2px solid var(--color-blanco);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.cabecera__logo-imagen {
+  display: block;
+  width: 12.625rem;
+  height: 2.4375rem;
+  max-width: 100%;
+}
+
+/* ---------- Barra de utilidades ---------- */
+.cabecera__utilidades {
+  background-color: var(--color-rojo-cervantes);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cabecera__utilidades-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 2rem;
+}
+
+.cabecera__utilidades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--espacio-xs) var(--espacio-md);
+}
+
+.cabecera__utilidades-lista a {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: var(--espacio-xs) 0;
+  transition: opacity var(--transicion-rapida);
+}
+
+.cabecera__utilidades-lista a:hover,
+.cabecera__utilidades-lista a:focus-visible {
+  opacity: 0.8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cabecera__utilidades-lista a:focus-visible {
+  outline: 2px solid var(--color-blanco);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------- Navegación principal ---------- */
+.cabecera__navegacion {
+  background-color: var(--color-blanco);
+  border-block: 1px solid var(--color-gris-borde);
+}
+
+.cabecera__nav-contenido {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+/* Botón hamburguesa (solo móvil) */
+.cabecera__menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: var(--espacio-sm);
+  border-radius: 4px;
+  transition: background-color var(--transicion-rapida);
+}
+
+.cabecera__menu-btn:hover {
+  background-color: var(--color-gris-claro);
+}
+
+.cabecera__menu-btn:focus-visible {
+  outline: 2px solid var(--color-rojo-cervantes);
+  outline-offset: 2px;
+}
+
+.cabecera__menu-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-negro);
+  border-radius: 1px;
+  transition: transform var(--transicion-rapida), opacity var(--transicion-rapida);
+}
+
+/* Animación del icono hamburguesa → X */
+.cabecera__menu-btn[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.cabecera__menu-btn[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.cabecera__menu-btn[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.cabecera__menu-etiqueta {
+  display: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gris-texto);
+}
+
+/* Lista de navegación principal */
+.cabecera__nav-lista {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.cabecera__nav-lista li {
+  display: flex;
+  align-items: center;
+}
+
+.cabecera__nav-lista li + li {
+  border-left: 1px solid var(--color-gris-borde);
+}
+
+.cabecera__nav-lista a {
+  display: block;
+  padding: var(--espacio-sm) var(--espacio-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-gris-texto);
+  white-space: nowrap;
+  transition: color var(--transicion-rapida), background-color var(--transicion-rapida);
+}
+
+.cabecera__nav-lista a:hover,
+.cabecera__nav-lista a:focus-visible {
+  color: var(--color-rojo-cervantes);
+  background-color: var(--color-gris-claro);
+}
+
+.cabecera__nav-lista a:focus-visible {
+  outline: 2px solid var(--color-rojo-cervantes);
+  outline-offset: -2px;
+}
+
+.cabecera__nav-lista a.activo {
+  color: var(--color-rojo-cervantes);
+  font-weight: 600;
+}
+
+/* ---------- Selector de idioma ---------- */
+.cabecera__idioma {
+  background-color: var(--color-gris-claro);
+  border-bottom: 1px solid var(--color-gris-borde);
+}
+
+.cabecera__idioma-contenido {
+  display: flex;
+  justify-content: flex-end;
+  padding-block: var(--espacio-xs);
+}
+
+.cabecera__idioma-lista {
+  display: flex;
+  gap: var(--espacio-sm);
+  font-size: 0.8125rem;
+}
+
+.cabecera__idioma-lista a {
+  color: var(--color-gris-texto);
+  transition: color var(--transicion-rapida);
+}
+
+.cabecera__idioma-lista a:hover,
+.cabecera__idioma-lista a:focus-visible {
+  color: var(--color-rojo-cervantes);
+}
+
+.cabecera__idioma-lista a.activo {
+  font-weight: 700;
+  color: var(--color-rojo-cervantes);
+}
+
+.cabecera__idioma-separador {
+  color: var(--color-gris-borde);
+  user-select: none;
+}
+
+/* =============================================
+   RESPONSIVE — Tablet y móvil
+   ============================================= */
+@media (max-width: 768px) {
+  .cabecera__centro-logo {
+    height: 2rem;
+  }
+
+  .cabecera__logo-imagen {
+    width: 9.5rem;
+    height: auto;
+  }
+
+  .cabecera__utilidades {
+    display: none;
+  }
+
+  .cabecera__menu-btn {
+    display: flex;
+  }
+
+  .cabecera__menu-etiqueta {
+    display: block;
+    margin-right: auto;
+    margin-left: var(--espacio-sm);
+  }
+
+  .cabecera__nav-lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-gris-borde);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .cabecera__nav-lista.abierto {
+    display: flex;
+  }
+
+  .cabecera__navegacion {
+    position: relative;
+  }
+
+  .cabecera__nav-lista li {
+    width: 100%;
+  }
+
+  .cabecera__nav-lista li + li {
+    border-left: none;
+    border-top: 1px solid var(--color-gris-borde);
+  }
+
+  .cabecera__nav-lista a {
+    width: 100%;
+    padding: var(--espacio-md);
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecera__marca-contenido {
+    min-height: 3rem;
+  }
+
+  .cabecera__centro-logo {
+    height: 1.75rem;
+  }
+
+  .cabecera__logo-imagen {
+    width: 8rem;
+  }
+}
