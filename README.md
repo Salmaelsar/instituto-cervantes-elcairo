@@ -57,3 +57,4 @@ scripts/      Generación de preguntas (desarrollo, no necesario en producción)
 ## Regenerar preguntas DELE (desarrollo)
 
 Los PDFs fuente y scripts Python están en `scripts/`. El archivo servido al navegador es `js/examenes-data.js`.
+# instituto-cervantes-elcairo
