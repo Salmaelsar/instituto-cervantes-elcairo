@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://salmaelsar.github.io/instituto-cervantes-elcairo/sitemap.xml

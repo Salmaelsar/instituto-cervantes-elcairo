@@ -3,7 +3,12 @@
    ============================================= */
 
 [dir="rtl"] body {
-  font-family: "Segoe UI", Tahoma, "Noto Sans Arabic", Arial, sans-serif;
+  font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+[dir="rtl"] .info-vivo--dele {
+  border-left: 1px solid var(--color-gris-borde);
+  border-right: 4px solid var(--color-rojo-cervantes);
 }
 
 [dir="rtl"] .cabecera__utilidades-contenido,

@@ -1,12 +1,20 @@
 # Instituto Cervantes de El Cairo — Web y simulador DELE
 
-Sitio web institucional del centro de El Cairo con simulador de examen DELE (lectura y auditiva).
+Sitio web bilingüe (español / árabe) con simulador DELE oficial para el centro de El Cairo.
 
-## Contenido
+**En línea:** https://salmaelsar.github.io/instituto-cervantes-elcairo/
 
-- Página de bienvenida en **español** y **árabe** (RTL)
-- Secciones: actividades, cursos, formación, DELE, biblioteca
-- Simulador DELE con **510 preguntas** (adultos A1–C2 y escolares)
+## Características
+
+- Página institucional responsive (cabecera, hero, secciones, footer)
+- **Español y árabe** con soporte RTL y fuente Noto Sans Arabic
+- **Simulador DELE:** 510 preguntas, lectura + auditiva, adultos y escolares
+- Modos **práctica** (corrección inmediata) y **examen** (corrección final)
+- Temporizador sugerido y **progreso guardado** en el navegador
+- Carga **lazy** de preguntas por nivel (mejor rendimiento)
+- Convocatorias DELE 2026 y precios (fuente oficial El Cairo)
+- Formulario de solicitud de matrícula
+- SEO: Open Graph, sitemap.xml, robots.txt
 
 ## Probar en local
 
@@ -15,46 +23,32 @@ cd "Instituto Cervantes Elcairo"
 python3 -m http.server 8765
 ```
 
-Abrir [http://localhost:8765](http://localhost:8765)
+Abrir http://localhost:8765
 
-## Publicar en GitHub Pages
+## Publicación
 
-### 1. Crear repositorio
+Ver [docs/PUBLICACION.md](docs/PUBLICACION.md).
 
 ```bash
-cd "Instituto Cervantes Elcairo"
-git init
 git add .
-git commit -m "Web Instituto Cervantes El Cairo con simulador DELE"
-git branch -M main
-git remote add origin https://github.com/Salmaelsar/instituto-cervantes-elcairo.git
-git push -u origin main
+git commit -m "tu mensaje"
+git push origin main
 ```
-
-> Crea antes el repositorio vacío en [github.com/new](https://github.com/new) con el nombre `instituto-cervantes-elcairo` (sin README ni `.gitignore`).
-
-### 2. Activar GitHub Pages
-
-1. En el repo: **Settings → Pages**
-2. **Build and deployment → Source**: seleccionar **GitHub Actions**
-3. El workflow `.github/workflows/pages.yml` publicará el sitio en cada push a `main`
-
-La URL será: **https://salmaelsar.github.io/instituto-cervantes-elcairo/**
-
-### 3. (Opcional) Dominio propio
-
-Añadir un archivo `CNAME` en la raíz con el dominio, y configurar DNS en el proveedor.
 
 ## Estructura
 
 ```
-css/          Estilos (cabecera, hero, secciones, simulador, RTL, móvil)
-js/           Simulador, i18n, datos DELE
-imagenes/     Logos y favicon
-scripts/      Generación de preguntas (desarrollo, no necesario en producción)
+css/           Estilos (responsive, RTL, simulador)
+js/
+  data/        Módulos DELE (carga lazy)
+  examenes-loader.js
+  main.js        Motor del simulador
+  i18n.js        Traducciones es/ar
+  examenes-data.js  Fuente completa (desarrollo)
+imagenes/      Logos, favicon, og-preview
+scripts/       Generación de preguntas (Python)
 ```
 
-## Regenerar preguntas DELE (desarrollo)
+## Autora
 
-Los PDFs fuente y scripts Python están en `scripts/`. El archivo servido al navegador es `js/examenes-data.js`.
-# instituto-cervantes-elcairo
+[Salmaelsar](https://github.com/Salmaelsar) — Proyecto formativo / portafolio.

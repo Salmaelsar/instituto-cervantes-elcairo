@@ -4,9 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Instituto Cervantes de El Cairo — Cursos de español, cultura hispana y diplomas DELE en Egipto.">
+  <meta name="author" content="Instituto Cervantes de El Cairo">
+  <meta name="theme-color" content="#b30000">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_EG">
+  <meta property="og:locale:alternate" content="ar_EG">
+  <meta property="og:title" content="Instituto Cervantes de El Cairo">
+  <meta property="og:description" content="Cursos de español, cultura hispana y simulador DELE oficial en Egipto.">
+  <meta property="og:url" content="https://salmaelsar.github.io/instituto-cervantes-elcairo/">
+  <meta property="og:image" content="https://salmaelsar.github.io/instituto-cervantes-elcairo/imagenes/og-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Instituto Cervantes de El Cairo">
+  <meta name="twitter:description" content="Cursos de español, cultura hispana y simulador DELE en Egipto.">
+  <meta name="twitter:image" content="https://salmaelsar.github.io/instituto-cervantes-elcairo/imagenes/og-preview.svg">
+  <link rel="canonical" href="https://salmaelsar.github.io/instituto-cervantes-elcairo/">
   <title>Instituto Cervantes de El Cairo</title>
   <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="imagenes/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -129,6 +146,10 @@
           <li data-i18n="actividades.l3">Conferencias, mesas redondas y presentaciones de libros.</li>
           <li data-i18n="actividades.l4">Exposiciones de arte y actividades para familias.</li>
         </ul>
+        <div class="info-vivo">
+          <h3 class="seccion__subtitulo" data-i18n="actividades.agendaTitulo">Agenda cultural</h3>
+          <p class="seccion__dato" data-i18n="actividades.agendaTexto">Consulta el calendario actualizado de cine, música, conferencias y exposiciones en la web del centro. El programa se renueva cada trimestre.</p>
+        </div>
         <p class="seccion__enlaces">
           <a href="https://elcairo.cervantes.es/es/default.shtm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="actividades.enlace">Ver agenda en el sitio oficial</a>
         </p>
@@ -163,6 +184,37 @@
           por WhatsApp al <a href="https://wa.me/201285062010">0128 506 2010</a>
           o visita el centro de domingo a jueves.
         </p>
+        <h3 class="seccion__subtitulo" data-i18n="cursos.preciosTitulo">Matrícula y precios</h3>
+        <p class="seccion__dato" data-i18n="cursos.preciosTexto">Los precios de los cursos generales y especializados se publican en cada convocatoria. Solicita información actualizada a secretaría o consulta la página oficial de matrícula.</p>
+
+        <form id="form-matricula" class="formulario" novalidate>
+          <h3 class="formulario__titulo" data-i18n="form.titulo">Solicitud de información / matrícula</h3>
+          <div class="formulario__grid">
+            <label class="formulario__campo">
+              <span data-i18n="form.nombre">Nombre completo</span>
+              <input type="text" name="nombre" required autocomplete="name">
+            </label>
+            <label class="formulario__campo">
+              <span data-i18n="form.email">Correo electrónico</span>
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+            <label class="formulario__campo">
+              <span data-i18n="form.telefono">Teléfono</span>
+              <input type="tel" name="telefono" autocomplete="tel">
+            </label>
+            <label class="formulario__campo">
+              <span data-i18n="form.curso">Curso o nivel de interés</span>
+              <input type="text" name="curso" placeholder="A2, DELE B1, etc.">
+            </label>
+            <label class="formulario__campo formulario__campo--ancho">
+              <span data-i18n="form.mensaje">Mensaje</span>
+              <textarea name="mensaje" rows="4" required></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn-comprobar" data-i18n="form.enviar">Enviar solicitud</button>
+          <p class="formulario__nota" data-i18n="form.nota">El formulario abre tu cliente de correo con los datos rellenados.</p>
+        </form>
+
         <p class="seccion__enlaces">
           <a href="https://elcairo.cervantes.es/es/cursos_espanol/matricula_curso_espanol.htm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="cursos.enlace1">Información de matrícula</a>
           <a href="https://ave.cervantes.es" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="cursos.enlace2">Aula Virtual de Español (AVE)</a>
@@ -204,6 +256,31 @@
             <p class="seccion__tarjeta-texto" data-i18n="dele.t2texto">El Cairo es centro examinador. Consulta fechas, tarifas y plazos de inscripción en la web oficial del centro.</p>
           </article>
         </div>
+        <div class="info-vivo info-vivo--dele">
+          <h3 class="seccion__subtitulo" data-i18n="dele.vivoTitulo">Convocatorias DELE 2026 — El Cairo</h3>
+          <p class="info-vivo__fuente" data-i18n="dele.vivoFuente">Datos oficiales del Instituto Cervantes de El Cairo.</p>
+          <div class="info-vivo__grid">
+            <article class="info-vivo__item">
+              <h4 data-i18n="dele.mayo">Mayo 2026</h4>
+              <p data-i18n="dele.mayoFecha">Escolares: 22 mayo · Generales: 23 mayo</p>
+              <p class="info-vivo__cierre" data-i18n="dele.mayoCierre">Cierre inscripción: 8 abril 2026</p>
+            </article>
+            <article class="info-vivo__item">
+              <h4 data-i18n="dele.octubre">Octubre 2026</h4>
+              <p data-i18n="dele.octubreFecha">Generales B1, B2 y C1: 16 octubre</p>
+              <p class="info-vivo__cierre" data-i18n="dele.octubreCierre">Cierre inscripción: 2 septiembre 2026</p>
+            </article>
+            <article class="info-vivo__item">
+              <h4 data-i18n="dele.noviembre">Noviembre 2026</h4>
+              <p data-i18n="dele.noviembreFecha">Escolares + A2: 13 nov · Generales: 14 nov</p>
+              <p class="info-vivo__cierre" data-i18n="dele.noviembreCierre">Cierre inscripción: 30 septiembre 2026</p>
+            </article>
+          </div>
+          <h4 class="info-vivo__precios-titulo" data-i18n="dele.preciosTitulo">Precios (EGP)</h4>
+          <p class="info-vivo__precios" data-i18n="dele.preciosTabla">A1/A1 escolar 1.150 · A2 1.250 · B1/A2-B1 escolar 1.450 · B2 1.550 · C1/B2-C1 escolar 1.750 · C2 2.050</p>
+          <p class="info-vivo__descuento" data-i18n="dele.descuento">10% de descuento para alumnos del centro o inscripción en tienda CLIC (no acumulables).</p>
+        </div>
+
         <aside class="seccion__destacado" aria-labelledby="dele-simulador-titulo">
           <h3 id="dele-simulador-titulo" class="seccion__destacado-titulo" data-i18n="dele.destacado">Prepara tu examen aquí</h3>
           <p class="seccion__destacado-texto" data-i18n="dele.destacadoTexto">
@@ -214,6 +291,7 @@
         </aside>
         <p class="seccion__enlaces">
           <a href="https://examenes.cervantes.es/es/dele/que-es" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="dele.enlace1">¿Qué es el DELE?</a>
+          <a href="https://elcairo.cervantes.es/es/diplomas_dele/plazos_y_precios.htm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="dele.vivoEnlace">Plazos y precios oficiales</a>
           <a href="https://elcairo.cervantes.es/es/default.shtm" class="seccion__enlace" target="_blank" rel="noopener noreferrer" data-i18n="dele.enlace2">Inscripción en El Cairo</a>
         </p>
       </section>
@@ -283,12 +361,26 @@
             <option value="auditiva" data-i18n="simulador.prueba.auditiva">Comprensión auditiva</option>
           </select>
 
+          <label class="simulador__etiqueta" for="select-modo" data-i18n="simulador.modo">Modo</label>
+          <select id="select-modo" class="simulador__select">
+            <option value="practica" data-i18n="simulador.modo.practica">Práctica (corrección inmediata)</option>
+            <option value="examen" data-i18n="simulador.modo.examen">Examen (corrección al final)</option>
+          </select>
+
+          <label class="simulador__opcion-extra">
+            <input type="checkbox" id="check-timer" checked>
+            <span data-i18n="simulador.timer">Activar temporizador sugerido</span>
+          </label>
+
           <button type="button" id="btn-iniciar-examen" class="btn-comprobar" data-i18n="simulador.iniciar">Empezar examen</button>
           <p class="simulador__nota" data-i18n="simulador.nota">510 preguntas disponibles en total (lectura + auditiva).</p>
         </div>
 
         <div class="simulador__examen" hidden>
           <p class="simulador__progreso" aria-live="polite"></p>
+          <p class="simulador__timer" hidden aria-live="polite"></p>
+          <p class="simulador__audio-aviso" hidden></p>
+          <audio class="simulador__audio" controls hidden preload="none"></audio>
           <p class="pregunta__tarea"></p>
           <article class="pregunta">
             <p class="pregunta__contexto-etiqueta"></p>
@@ -299,6 +391,7 @@
             <div class="simulador__acciones">
               <button type="button" class="btn-comprobar" data-i18n="simulador.comprobar">Comprobar respuesta</button>
               <button type="button" class="btn-siguiente" hidden data-i18n="sim.siguiente">Siguiente pregunta</button>
+              <button type="button" class="btn-finalizar" hidden data-i18n="simulador.finalizar">Finalizar examen</button>
             </div>
             <p class="feedback" role="status" aria-live="polite" hidden></p>
           </article>
@@ -307,8 +400,14 @@
         <div class="simulador__resultado" hidden>
           <h3 class="simulador__resultado-titulo" data-i18n="simulador.resultado.titulo">Resultado del examen</h3>
           <p class="simulador__resultado-texto"></p>
+          <div class="simulador__resultado-detalle" hidden></div>
           <button type="button" class="btn-reiniciar" data-i18n="simulador.reiniciar">Elegir otro examen</button>
         </div>
+      </section>
+
+      <section id="institucional" class="seccion seccion--utilidad ancla-seccion" aria-labelledby="inst-titulo">
+        <h2 id="inst-titulo" class="seccion__titulo" data-i18n="inst.titulo">Uso institucional</h2>
+        <p class="seccion__intro" data-i18n="inst.texto">Este sitio es un proyecto educativo con simulador DELE. Para la web oficial del centro, dominio propio o validación institucional, contacta con la dirección del Instituto Cervantes de El Cairo.</p>
       </section>
     </div>
   </main>
@@ -360,7 +459,8 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/header.js"></script>
-  <script src="js/examenes-data.js"></script>
+  <script src="js/examenes-loader.js"></script>
+  <script src="js/formulario.js"></script>
   <script src="js/main.js"></script>
 </body>
 <!-- Forzar despliegue de GitHub Pages -->

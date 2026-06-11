@@ -1,0 +1,96 @@
+{
+  "adultos": {
+    "a1": {
+      "lectura": {
+        "file": "adultos-a1-lectura.js",
+        "preguntas": 25
+      },
+      "auditiva": {
+        "file": "adultos-a1-auditiva.js",
+        "preguntas": 25
+      }
+    },
+    "a2": {
+      "lectura": {
+        "file": "adultos-a2-lectura.js",
+        "preguntas": 25
+      },
+      "auditiva": {
+        "file": "adultos-a2-auditiva.js",
+        "preguntas": 25
+      }
+    },
+    "b1": {
+      "lectura": {
+        "file": "adultos-b1-lectura.js",
+        "preguntas": 30
+      },
+      "auditiva": {
+        "file": "adultos-b1-auditiva.js",
+        "preguntas": 30
+      }
+    },
+    "b2": {
+      "lectura": {
+        "file": "adultos-b2-lectura.js",
+        "preguntas": 36
+      },
+      "auditiva": {
+        "file": "adultos-b2-auditiva.js",
+        "preguntas": 30
+      }
+    },
+    "c1": {
+      "lectura": {
+        "file": "adultos-c1-lectura.js",
+        "preguntas": 40
+      },
+      "auditiva": {
+        "file": "adultos-c1-auditiva.js",
+        "preguntas": 30
+      }
+    },
+    "c2": {
+      "lectura": {
+        "file": "adultos-c2-lectura.js",
+        "preguntas": 26
+      },
+      "auditiva": {
+        "file": "adultos-c2-auditiva.js",
+        "preguntas": 26
+      }
+    }
+  },
+  "escolares": {
+    "a1": {
+      "lectura": {
+        "file": "escolares-a1-lectura.js",
+        "preguntas": 25
+      },
+      "auditiva": {
+        "file": "escolares-a1-auditiva.js",
+        "preguntas": 25
+      }
+    },
+    "a2b1": {
+      "lectura": {
+        "file": "escolares-a2b1-lectura.js",
+        "preguntas": 25
+      },
+      "auditiva": {
+        "file": "escolares-a2b1-auditiva.js",
+        "preguntas": 25
+      }
+    },
+    "b2c1": {
+      "lectura": {
+        "file": "escolares-b2c1-lectura.js",
+        "preguntas": 32
+      },
+      "auditiva": {
+        "file": "escolares-b2c1-auditiva.js",
+        "preguntas": 30
+      }
+    }
+  }
+}

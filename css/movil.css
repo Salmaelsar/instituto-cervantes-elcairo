@@ -94,6 +94,20 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .info-vivo__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-finalizar {
+    width: 100%;
+    text-align: center;
+    min-height: 2.75rem;
+  }
 }
 
 @media (max-width: 480px) {
