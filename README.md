@@ -52,7 +52,13 @@ Pensado para estudiantes de español en Egipto y el mundo árabe, con interfaz e
 
 ## Capturas
 
-> Añade aquí 2–3 capturas en `docs/capturas/` (escritorio, móvil, simulador).
+| Inicio (español) | Simulador DELE | Versión árabe (móvil) |
+|:---:|:---:|:---:|
+| ![Página de inicio en español](docs/capturas/inicio-escritorio.png) | ![Panel del simulador DELE](docs/capturas/simulador.png) | ![Vista móvil en árabe](docs/capturas/movil-arabe.png) |
+
+| Convocatorias DELE 2026 (árabe) |
+|:---:|
+| ![Sección DELE en árabe con fechas y precios](docs/capturas/dele-arabe.png) |
 
 ---
 
